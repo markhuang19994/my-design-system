@@ -15,30 +15,53 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [22.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+        node-version: [ 22.x ]
     permissions:
       contents: write
-      
+      actions: write
+      packages: write
+
     steps:
-    - uses: actions/checkout@v4
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v4
-      with:
-        node-version: ${{ matrix.node-version }}
-        cache: 'npm'
-    - run: npm ci
-    - run: node build-output.js
-    
-    - name: Push to main branch
-      run: |
-        git config --global user.name 'github-actions[bot]'
-        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-        
-        git checkout -b main || git checkout main
-  
-        git add build/*
-        git commit -m "Auto build [skip ci]"
-        git push origin main
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - uses: actions/checkout@v4
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'npm'
+          registry-url: https://npm.pkg.github.com/
+          scope: '@markhuang19994'
+      - run: npm ci
+      - run: node build-output.js
+
+      - name: Publish new design token version
+        run: |
+          cd design-token || exit 1
+          mv ../build/css/* .
+          
+          # check any change
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add ./*
+          git commit -m "check any change" || exit 0
+          
+          # update package version via commit message
+          COMMIT_MSG=$(git log -1 --pretty=%B)
+          if [[ "$COMMIT_MSG" == *"[major]"* ]]; then
+            npm version major
+          elif [[ "$COMMIT_MSG" == *"[minor]"* ]]; then
+            npm version minor
+          else
+            npm version patch
+          fi
+          
+          # publish to npm repository
+          npm publish
+          
+          # push new package version
+          git reset --soft HEAD^1
+          git add package.json
+          git commit -m "Update lib version [skip ci]"
+          git push origin main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}

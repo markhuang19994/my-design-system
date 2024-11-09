@@ -1,0 +1,17 @@
+{
+  "name": "@markhuang19994/igx-design-token",
+  "version": "1.0.2",
+  "description": "design token lib",
+  "main": "variables.css",
+  "style": "variables.css",
+  "files": [
+    "LICENSE.md",
+    "variables.css",
+    "variables.scss",
+    "variables-map.scss"
+  ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/@markhuang19994"
+  },
+  "license": "MIT"
+}
