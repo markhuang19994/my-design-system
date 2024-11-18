@@ -186,6 +186,7 @@ $ilc-opacity-gray-8-80: rgba(37, 43, 55, 0.8) !default;
 $ilc-opacity-gray-8-60: rgba(37, 43, 55, 0.6) !default;
 $ilc-opacity-gray-8-40: rgba(37, 43, 55, 0.4) !default;
 $ilc-opacity-gray-8-20: rgba(37, 43, 55, 0.2) !default;
+$ilc-test: #ffffff !default;
 $ilc-full: 62499.9375rem !default;
 $ilc-0-5: 0.0313rem !default;
 $ilc-1-5: 0.0938rem !default;
@@ -730,6 +731,7 @@ $tokens: (
     'gray-8-40': $ilc-opacity-gray-8-40,
     'gray-8-20': $ilc-opacity-gray-8-20
   ),
+  'test': $ilc-test,
   'full': $ilc-full,
   '0,5': $ilc-0-5,
   '1,5': $ilc-1-5,
