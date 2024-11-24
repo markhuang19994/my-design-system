@@ -4,9 +4,9 @@
  */
 
 $ilc-0: 0rem !default;
-$ilc-1: 0.0625rem !default;
-$ilc-2: 0.125rem !default;
-$ilc-3: 0.1875rem !default;
+$ilc-1: 1px !default;
+$ilc-2: 2px !default;
+$ilc-3: 3px !default;
 $ilc-4: 0.25rem !default;
 $ilc-6: 0.375rem !default;
 $ilc-8: 0.5rem !default;
@@ -34,11 +34,13 @@ $ilc-144: 9rem !default;
 $ilc-160: 10rem !default;
 $ilc-176: 11rem !default;
 $ilc-192: 12rem !default;
+$ilc-208: 13rem !default;
 $ilc-224: 14rem !default;
 $ilc-240: 15rem !default;
 $ilc-256: 16rem !default;
 $ilc-288: 18rem !default;
 $ilc-320: 20rem !default;
+$ilc-384: 24rem !default;
 $ilc-400: 25rem !default;
 $ilc-dark-0: #fafafa !default;
 $ilc-dark-1: #f5f5f5 !default;
@@ -188,8 +190,6 @@ $ilc-opacity-gray-8-40: rgba(37, 43, 55, 0.4) !default;
 $ilc-opacity-gray-8-20: rgba(37, 43, 55, 0.2) !default;
 $ilc-test: #ffffff !default;
 $ilc-full: 62499.9375rem !default;
-$ilc-0-5: 0.0313rem !default;
-$ilc-1-5: 0.0938rem !default;
 $ilc-font-families-open-sans: 'Open Sans' !default;
 $ilc-line-heights-xl: 32 !default;
 $ilc-line-heights-lg: 28 !default;
@@ -281,91 +281,151 @@ $ilc-foreground-error-accent: $ilc-red-7 !default;
 $ilc-foreground-error-on-accent: $ilc-red-9 !default;
 $ilc-foreground-warning-accent: $ilc-yellow-6 !default;
 $ilc-foreground-success-accent: $ilc-green-6 !default;
-$ilc-padding-xs: $ilc-2 !default;
-$ilc-padding-sm: $ilc-4 !default;
-$ilc-padding-md: $ilc-6 !default;
-$ilc-padding-lg: $ilc-8 !default;
-$ilc-padding-xl: $ilc-10 !default;
-$ilc-padding-2xl: $ilc-12 !default;
-$ilc-padding-3xl: $ilc-16 !default;
-$ilc-padding-4xl: $ilc-20 !default;
-$ilc-padding-5xl: $ilc-24 !default;
-$ilc-padding-6xl: $ilc-28 !default;
-$ilc-padding-7xl: $ilc-32 !default;
-$ilc-padding-8xl: $ilc-36 !default;
-$ilc-padding-9xl: $ilc-40 !default;
-$ilc-margin-xs: $ilc-2 !default;
-$ilc-margin-sm: $ilc-4 !default;
-$ilc-margin-md: $ilc-6 !default;
-$ilc-margin-lg: $ilc-8 !default;
-$ilc-margin-xl: $ilc-10 !default;
-$ilc-margin-2xl: $ilc-12 !default;
-$ilc-margin-3xl: $ilc-16 !default;
-$ilc-margin-4xl: $ilc-20 !default;
-$ilc-margin-5xl: $ilc-24 !default;
-$ilc-margin-6xl: $ilc-28 !default;
-$ilc-margin-7xl: $ilc-32 !default;
-$ilc-margin-8xl: $ilc-36 !default;
-$ilc-margin-9xl: $ilc-40 !default;
+$ilc-padding-1: $ilc-4 !default;
+$ilc-padding-2: $ilc-8 !default;
+$ilc-padding-3: $ilc-12 !default;
+$ilc-padding-4: $ilc-16 !default;
+$ilc-padding-5: $ilc-20 !default;
+$ilc-padding-6: $ilc-24 !default;
+$ilc-padding-7: $ilc-28 !default;
+$ilc-padding-8: $ilc-32 !default;
+$ilc-padding-9: $ilc-36 !default;
+$ilc-padding-10: $ilc-40 !default;
+$ilc-padding-11: $ilc-44 !default;
+$ilc-padding-12: $ilc-48 !default;
+$ilc-padding-14: $ilc-56 !default;
+$ilc-padding-16: $ilc-64 !default;
+$ilc-padding-20: $ilc-80 !default;
+$ilc-padding-24: $ilc-96 !default;
+$ilc-padding-28: $ilc-112 !default;
+$ilc-padding-32: $ilc-128 !default;
+$ilc-padding-36: $ilc-144 !default;
+$ilc-padding-40: $ilc-160 !default;
+$ilc-padding-44: $ilc-176 !default;
+$ilc-padding-48: $ilc-192 !default;
+$ilc-padding-52: $ilc-208 !default;
+$ilc-padding-56: $ilc-224 !default;
+$ilc-padding-60: $ilc-240 !default;
+$ilc-padding-64: $ilc-256 !default;
+$ilc-padding-72: $ilc-288 !default;
+$ilc-padding-80: $ilc-320 !default;
+$ilc-padding-96: $ilc-384 !default;
+$ilc-padding-2px: $ilc-2 !default;
+$ilc-padding-1s: $ilc-6 !default;
+$ilc-padding-2s: $ilc-10 !default;
+$ilc-margin-1: $ilc-4 !default;
+$ilc-margin-2: $ilc-8 !default;
+$ilc-margin-3: $ilc-12 !default;
+$ilc-margin-4: $ilc-16 !default;
+$ilc-margin-5: $ilc-20 !default;
+$ilc-margin-6: $ilc-24 !default;
+$ilc-margin-7: $ilc-28 !default;
+$ilc-margin-8: $ilc-32 !default;
+$ilc-margin-9: $ilc-36 !default;
+$ilc-margin-10: $ilc-40 !default;
+$ilc-margin-11: $ilc-44 !default;
+$ilc-margin-12: $ilc-48 !default;
+$ilc-margin-14: $ilc-56 !default;
+$ilc-margin-16: $ilc-64 !default;
+$ilc-margin-20: $ilc-80 !default;
+$ilc-margin-2px: $ilc-2 !default;
+$ilc-margin-1s: $ilc-6 !default;
+$ilc-margin-2s: $ilc-10 !default;
 $ilc-raduis-xs: $ilc-2 !default;
 $ilc-raduis-sm: $ilc-4 !default;
 $ilc-raduis-md: $ilc-8 !default;
 $ilc-raduis-lg: $ilc-10 !default;
 $ilc-raduis-full: $ilc-full !default;
-$ilc-raduis-sl: $ilc-16 !default;
+$ilc-raduis-xl: $ilc-16 !default;
 $ilc-raduis-2xl: $ilc-20 !default;
-$ilc-gap-xs: $ilc-2 !default;
-$ilc-gap-sm: $ilc-4 !default;
-$ilc-gap-md: $ilc-6 !default;
-$ilc-gap-lg: $ilc-8 !default;
-$ilc-gap-xl: $ilc-10 !default;
-$ilc-gap-2xl: $ilc-12 !default;
-$ilc-gap-3xl: $ilc-16 !default;
-$ilc-height-xs: $ilc-1 !default;
-$ilc-height-sm: $ilc-2 !default;
-$ilc-height-md: $ilc-4 !default;
-$ilc-height-lg: $ilc-6 !default;
-$ilc-height-xl: $ilc-8 !default;
-$ilc-height-2xl: $ilc-10 !default;
-$ilc-height-3xl: $ilc-12 !default;
-$ilc-height-4xl: $ilc-14 !default;
-$ilc-height-5xl: $ilc-16 !default;
-$ilc-height-6xl: $ilc-20 !default;
-$ilc-height-7xl: $ilc-24 !default;
-$ilc-height-8xl: $ilc-28 !default;
-$ilc-height-9xl: $ilc-32 !default;
-$ilc-height-10xl: $ilc-36 !default;
-$ilc-height-11xl: $ilc-40 !default;
-$ilc-height-12xl: $ilc-44 !default;
-$ilc-height-13xl: $ilc-48 !default;
-$ilc-height-14xl: $ilc-56 !default;
-$ilc-height-15xl: $ilc-64 !default;
-$ilc-height-16xl: $ilc-80 !default;
+$ilc-gap-1: $ilc-4 !default;
+$ilc-gap-2: $ilc-8 !default;
+$ilc-gap-3: $ilc-12 !default;
+$ilc-gap-4: $ilc-16 !default;
+$ilc-gap-5: $ilc-20 !default;
+$ilc-gap-7: $ilc-28 !default;
+$ilc-gap-8: $ilc-32 !default;
+$ilc-gap-9: $ilc-36 !default;
+$ilc-gap-10: $ilc-40 !default;
+$ilc-gap-11: $ilc-44 !default;
+$ilc-gap-12: $ilc-48 !default;
+$ilc-gap-2px: $ilc-2 !default;
+$ilc-gap-1s: $ilc-6 !default;
+$ilc-gap-2s: $ilc-10 !default;
+$ilc-height-1: $ilc-4 !default;
+$ilc-height-2: $ilc-8 !default;
+$ilc-height-3: $ilc-12 !default;
+$ilc-height-4: $ilc-16 !default;
+$ilc-height-5: $ilc-20 !default;
+$ilc-height-6: $ilc-24 !default;
+$ilc-height-7: $ilc-28 !default;
+$ilc-height-8: $ilc-32 !default;
+$ilc-height-9: $ilc-36 !default;
+$ilc-height-10: $ilc-40 !default;
+$ilc-height-11: $ilc-44 !default;
+$ilc-height-12: $ilc-48 !default;
+$ilc-height-14: $ilc-56 !default;
+$ilc-height-16: $ilc-64 !default;
+$ilc-height-18: $ilc-72 !default;
+$ilc-height-20: $ilc-80 !default;
+$ilc-height-24: $ilc-96 !default;
+$ilc-height-28: $ilc-112 !default;
+$ilc-height-32: $ilc-128 !default;
+$ilc-height-36: $ilc-144 !default;
+$ilc-height-40: $ilc-160 !default;
+$ilc-height-44: $ilc-176 !default;
+$ilc-height-48: $ilc-192 !default;
+$ilc-height-52: $ilc-208 !default;
+$ilc-height-56: $ilc-224 !default;
+$ilc-height-60: $ilc-240 !default;
+$ilc-height-64: $ilc-256 !default;
+$ilc-height-72: $ilc-288 !default;
+$ilc-height-80: $ilc-320 !default;
+$ilc-height-96: $ilc-384 !default;
+$ilc-height-100: $ilc-400 !default;
+$ilc-height-1px: $ilc-1 !default;
+$ilc-height-2px: $ilc-2 !default;
+$ilc-height-1s: $ilc-6 !default;
+$ilc-height-2s: $ilc-10 !default;
+$ilc-height-3s: $ilc-14 !default;
 $ilc-stroke-sm: $ilc-1 !default;
-$ilc-stroke-lg: $ilc-2 !default;
-$ilc-stroke-xs: $ilc-0-5 !default;
-$ilc-stroke-md: $ilc-1-5 !default;
-$ilc-width-xs: $ilc-1 !default;
-$ilc-width-sm: $ilc-2 !default;
-$ilc-width-md: $ilc-4 !default;
-$ilc-width-lg: $ilc-6 !default;
-$ilc-width-xl: $ilc-8 !default;
-$ilc-width-2xl: $ilc-10 !default;
-$ilc-width-3xl: $ilc-12 !default;
-$ilc-width-4xl: $ilc-14 !default;
-$ilc-width-5xl: $ilc-16 !default;
-$ilc-width-6xl: $ilc-20 !default;
-$ilc-width-7xl: $ilc-24 !default;
-$ilc-width-8xl: $ilc-28 !default;
-$ilc-width-9xl: $ilc-32 !default;
-$ilc-width-10xl: $ilc-36 !default;
-$ilc-width-11xl: $ilc-40 !default;
-$ilc-width-12xl: $ilc-44 !default;
-$ilc-width-13xl: $ilc-48 !default;
-$ilc-width-14xl: $ilc-56 !default;
-$ilc-width-15xl: $ilc-64 !default;
-$ilc-width-16xl: $ilc-80 !default;
-$ilc-width-17xl: $ilc-400 !default;
+$ilc-stroke-md: $ilc-2 !default;
+$ilc-width-1: $ilc-4 !default;
+$ilc-width-2: $ilc-8 !default;
+$ilc-width-3: $ilc-12 !default;
+$ilc-width-4: $ilc-16 !default;
+$ilc-width-5: $ilc-20 !default;
+$ilc-width-6: $ilc-24 !default;
+$ilc-width-7: $ilc-28 !default;
+$ilc-width-8: $ilc-32 !default;
+$ilc-width-9: $ilc-36 !default;
+$ilc-width-10: $ilc-40 !default;
+$ilc-width-11: $ilc-44 !default;
+$ilc-width-12: $ilc-48 !default;
+$ilc-width-14: $ilc-56 !default;
+$ilc-width-16: $ilc-64 !default;
+$ilc-width-18: $ilc-72 !default;
+$ilc-width-20: $ilc-80 !default;
+$ilc-width-24: $ilc-96 !default;
+$ilc-width-28: $ilc-112 !default;
+$ilc-width-32: $ilc-128 !default;
+$ilc-width-36: $ilc-144 !default;
+$ilc-width-40: $ilc-160 !default;
+$ilc-width-44: $ilc-176 !default;
+$ilc-width-48: $ilc-192 !default;
+$ilc-width-52: $ilc-208 !default;
+$ilc-width-56: $ilc-224 !default;
+$ilc-width-60: $ilc-240 !default;
+$ilc-width-64: $ilc-256 !default;
+$ilc-width-72: $ilc-288 !default;
+$ilc-width-80: $ilc-320 !default;
+$ilc-width-96: $ilc-384 !default;
+$ilc-width-100: $ilc-400 !default;
+$ilc-width-1px: $ilc-1 !default;
+$ilc-width-2px: $ilc-2 !default;
+$ilc-width-1s: $ilc-6 !default;
+$ilc-width-2s: $ilc-10 !default;
+$ilc-width-3s: $ilc-14 !default;
 $ilc-button-filled-primary-bg: $ilc-background-brand !default;
 $ilc-button-filled-primary-bg-hover: $ilc-background-brand-hover !default;
 $ilc-button-filled-primary-bg-disabled: $ilc-background-disabled !default;
@@ -511,9 +571,9 @@ $ilc-dialog-fg-success: $ilc-foreground-success-accent !default;
 $ilc-dialog-fg-warning: $ilc-foreground-warning-accent !default;
 $ilc-dialog-fg-error: $ilc-foreground-error-accent !default;
 $ilc-dialog-radius: $ilc-raduis-md !default;
-$ilc-dialog-padding-x: $ilc-padding-3xl !default;
-$ilc-dialog-padding-top: $ilc-padding-4xl !default;
-$ilc-dialog-padding-bottom: $ilc-padding-3xl !default;
+$ilc-dialog-padding-x: $ilc-padding-4 !default;
+$ilc-dialog-padding-top: $ilc-padding-5 !default;
+$ilc-dialog-padding-bottom: $ilc-padding-4 !default;
 
 $tokens: (
   '0': $ilc-0,
@@ -547,11 +607,13 @@ $tokens: (
   '160': $ilc-160,
   '176': $ilc-176,
   '192': $ilc-192,
+  '208': $ilc-208,
   '224': $ilc-224,
   '240': $ilc-240,
   '256': $ilc-256,
   '288': $ilc-288,
   '320': $ilc-320,
+  '384': $ilc-384,
   '400': $ilc-400,
   'dark': (
     '0': $ilc-dark-0,
@@ -733,8 +795,6 @@ $tokens: (
   ),
   'test': $ilc-test,
   'full': $ilc-full,
-  '0,5': $ilc-0-5,
-  '1,5': $ilc-1-5,
   'fontFamilies': (
     'open-sans': $ilc-font-families-open-sans
   ),
@@ -863,34 +923,58 @@ $tokens: (
     'xs': $ilc-shadow-xs
   ),
   'padding': (
-    'xs': $ilc-padding-xs,
-    'sm': $ilc-padding-sm,
-    'md': $ilc-padding-md,
-    'lg': $ilc-padding-lg,
-    'xl': $ilc-padding-xl,
-    '2xl': $ilc-padding-2xl,
-    '3xl': $ilc-padding-3xl,
-    '4xl': $ilc-padding-4xl,
-    '5xl': $ilc-padding-5xl,
-    '6xl': $ilc-padding-6xl,
-    '7xl': $ilc-padding-7xl,
-    '8xl': $ilc-padding-8xl,
-    '9xl': $ilc-padding-9xl
+    '1': $ilc-padding-1,
+    '2': $ilc-padding-2,
+    '3': $ilc-padding-3,
+    '4': $ilc-padding-4,
+    '5': $ilc-padding-5,
+    '6': $ilc-padding-6,
+    '7': $ilc-padding-7,
+    '8': $ilc-padding-8,
+    '9': $ilc-padding-9,
+    '10': $ilc-padding-10,
+    '11': $ilc-padding-11,
+    '12': $ilc-padding-12,
+    '14': $ilc-padding-14,
+    '16': $ilc-padding-16,
+    '20': $ilc-padding-20,
+    '24': $ilc-padding-24,
+    '28': $ilc-padding-28,
+    '32': $ilc-padding-32,
+    '36': $ilc-padding-36,
+    '40': $ilc-padding-40,
+    '44': $ilc-padding-44,
+    '48': $ilc-padding-48,
+    '52': $ilc-padding-52,
+    '56': $ilc-padding-56,
+    '60': $ilc-padding-60,
+    '64': $ilc-padding-64,
+    '72': $ilc-padding-72,
+    '80': $ilc-padding-80,
+    '96': $ilc-padding-96,
+    '2px': $ilc-padding-2px,
+    '1s': $ilc-padding-1s,
+    '2s': $ilc-padding-2s
   ),
   'margin': (
-    'xs': $ilc-margin-xs,
-    'sm': $ilc-margin-sm,
-    'md': $ilc-margin-md,
-    'lg': $ilc-margin-lg,
-    'xl': $ilc-margin-xl,
-    '2xl': $ilc-margin-2xl,
-    '3xl': $ilc-margin-3xl,
-    '4xl': $ilc-margin-4xl,
-    '5xl': $ilc-margin-5xl,
-    '6xl': $ilc-margin-6xl,
-    '7xl': $ilc-margin-7xl,
-    '8xl': $ilc-margin-8xl,
-    '9xl': $ilc-margin-9xl
+    '1': $ilc-margin-1,
+    '2': $ilc-margin-2,
+    '3': $ilc-margin-3,
+    '4': $ilc-margin-4,
+    '5': $ilc-margin-5,
+    '6': $ilc-margin-6,
+    '7': $ilc-margin-7,
+    '8': $ilc-margin-8,
+    '9': $ilc-margin-9,
+    '10': $ilc-margin-10,
+    '11': $ilc-margin-11,
+    '12': $ilc-margin-12,
+    '14': $ilc-margin-14,
+    '16': $ilc-margin-16,
+    '20': $ilc-margin-20,
+    '2px': $ilc-margin-2px,
+    '1s': $ilc-margin-1s,
+    '2s': $ilc-margin-2s
   ),
   'raduis': (
     'xs': $ilc-raduis-xs,
@@ -898,68 +982,104 @@ $tokens: (
     'md': $ilc-raduis-md,
     'lg': $ilc-raduis-lg,
     'full': $ilc-raduis-full,
-    'sl': $ilc-raduis-sl,
+    'xl': $ilc-raduis-xl,
     '2xl': $ilc-raduis-2xl
   ),
   'gap': (
-    'xs': $ilc-gap-xs,
-    'sm': $ilc-gap-sm,
-    'md': $ilc-gap-md,
-    'lg': $ilc-gap-lg,
-    'xl': $ilc-gap-xl,
-    '2xl': $ilc-gap-2xl,
-    '3xl': $ilc-gap-3xl
+    '1': $ilc-gap-1,
+    '2': $ilc-gap-2,
+    '3': $ilc-gap-3,
+    '4': $ilc-gap-4,
+    '5': $ilc-gap-5,
+    '7': $ilc-gap-7,
+    '8': $ilc-gap-8,
+    '9': $ilc-gap-9,
+    '10': $ilc-gap-10,
+    '11': $ilc-gap-11,
+    '12': $ilc-gap-12,
+    '2px': $ilc-gap-2px,
+    '1s': $ilc-gap-1s,
+    '2s': $ilc-gap-2s
   ),
   'height': (
-    'xs': $ilc-height-xs,
-    'sm': $ilc-height-sm,
-    'md': $ilc-height-md,
-    'lg': $ilc-height-lg,
-    'xl': $ilc-height-xl,
-    '2xl': $ilc-height-2xl,
-    '3xl': $ilc-height-3xl,
-    '4xl': $ilc-height-4xl,
-    '5xl': $ilc-height-5xl,
-    '6xl': $ilc-height-6xl,
-    '7xl': $ilc-height-7xl,
-    '8xl': $ilc-height-8xl,
-    '9xl': $ilc-height-9xl,
-    '10xl': $ilc-height-10xl,
-    '11xl': $ilc-height-11xl,
-    '12xl': $ilc-height-12xl,
-    '13xl': $ilc-height-13xl,
-    '14xl': $ilc-height-14xl,
-    '15xl': $ilc-height-15xl,
-    '16xl': $ilc-height-16xl
+    '1': $ilc-height-1,
+    '2': $ilc-height-2,
+    '3': $ilc-height-3,
+    '4': $ilc-height-4,
+    '5': $ilc-height-5,
+    '6': $ilc-height-6,
+    '7': $ilc-height-7,
+    '8': $ilc-height-8,
+    '9': $ilc-height-9,
+    '10': $ilc-height-10,
+    '11': $ilc-height-11,
+    '12': $ilc-height-12,
+    '14': $ilc-height-14,
+    '16': $ilc-height-16,
+    '18': $ilc-height-18,
+    '20': $ilc-height-20,
+    '24': $ilc-height-24,
+    '28': $ilc-height-28,
+    '32': $ilc-height-32,
+    '36': $ilc-height-36,
+    '40': $ilc-height-40,
+    '44': $ilc-height-44,
+    '48': $ilc-height-48,
+    '52': $ilc-height-52,
+    '56': $ilc-height-56,
+    '60': $ilc-height-60,
+    '64': $ilc-height-64,
+    '72': $ilc-height-72,
+    '80': $ilc-height-80,
+    '96': $ilc-height-96,
+    '100': $ilc-height-100,
+    '1px': $ilc-height-1px,
+    '2px': $ilc-height-2px,
+    '1s': $ilc-height-1s,
+    '2s': $ilc-height-2s,
+    '3s': $ilc-height-3s
   ),
   'stroke': (
     'sm': $ilc-stroke-sm,
-    'lg': $ilc-stroke-lg,
-    'xs': $ilc-stroke-xs,
     'md': $ilc-stroke-md
   ),
   'width': (
-    'xs': $ilc-width-xs,
-    'sm': $ilc-width-sm,
-    'md': $ilc-width-md,
-    'lg': $ilc-width-lg,
-    'xl': $ilc-width-xl,
-    '2xl': $ilc-width-2xl,
-    '3xl': $ilc-width-3xl,
-    '4xl': $ilc-width-4xl,
-    '5xl': $ilc-width-5xl,
-    '6xl': $ilc-width-6xl,
-    '7xl': $ilc-width-7xl,
-    '8xl': $ilc-width-8xl,
-    '9xl': $ilc-width-9xl,
-    '10xl': $ilc-width-10xl,
-    '11xl': $ilc-width-11xl,
-    '12xl': $ilc-width-12xl,
-    '13xl': $ilc-width-13xl,
-    '14xl': $ilc-width-14xl,
-    '15xl': $ilc-width-15xl,
-    '16xl': $ilc-width-16xl,
-    '17xl': $ilc-width-17xl
+    '1': $ilc-width-1,
+    '2': $ilc-width-2,
+    '3': $ilc-width-3,
+    '4': $ilc-width-4,
+    '5': $ilc-width-5,
+    '6': $ilc-width-6,
+    '7': $ilc-width-7,
+    '8': $ilc-width-8,
+    '9': $ilc-width-9,
+    '10': $ilc-width-10,
+    '11': $ilc-width-11,
+    '12': $ilc-width-12,
+    '14': $ilc-width-14,
+    '16': $ilc-width-16,
+    '18': $ilc-width-18,
+    '20': $ilc-width-20,
+    '24': $ilc-width-24,
+    '28': $ilc-width-28,
+    '32': $ilc-width-32,
+    '36': $ilc-width-36,
+    '40': $ilc-width-40,
+    '44': $ilc-width-44,
+    '48': $ilc-width-48,
+    '52': $ilc-width-52,
+    '56': $ilc-width-56,
+    '60': $ilc-width-60,
+    '64': $ilc-width-64,
+    '72': $ilc-width-72,
+    '80': $ilc-width-80,
+    '96': $ilc-width-96,
+    '100': $ilc-width-100,
+    '1px': $ilc-width-1px,
+    '2px': $ilc-width-2px,
+    '1s': $ilc-width-1s,
+    '2s': $ilc-width-2s,
+    '3s': $ilc-width-3s
   ),
   'button': (
     'filled': (
