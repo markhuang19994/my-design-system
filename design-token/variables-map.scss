@@ -620,20 +620,21 @@ $ilc-dialog-radius: $ilc-raduis-md !default;
 $ilc-dialog-padding-x: $ilc-padding-4 !default;
 $ilc-dialog-padding-top: $ilc-padding-5 !default;
 $ilc-dialog-padding-bottom: $ilc-padding-4 !default;
-$ilc-section-default-bg-hover: $ilc-background-brand-primary !default;
-$ilc-section-default-bg-focused: $ilc-background-brand-primary !default;
-$ilc-section-default-bg-disabled: $ilc-background-disabled !default;
-$ilc-section-default-text: $ilc-text-primary !default;
-$ilc-section-default-text-hover: $ilc-text-primary-hover !default;
-$ilc-section-default-text-focused: $ilc-text-primary !default;
-$ilc-section-default-text-disabled: $ilc-text-disabled !default;
-$ilc-section-active-bg-hover: $ilc-background-brand-primary !default;
-$ilc-section-active-bg-focused: $ilc-background-brand-primary !default;
-$ilc-section-active-bg-disabled: $ilc-background-disabled !default;
-$ilc-section-active-text: $ilc-text-brand !default;
-$ilc-section-active-text-hover: $ilc-text-brand-hover !default;
-$ilc-section-active-text-focused: $ilc-text-brand !default;
-$ilc-section-active-text-disabled: $ilc-text-disabled !default;
+$ilc-section-item-default-bg-hover: $ilc-background-brand-primary !default;
+$ilc-section-item-default-bg-focused: $ilc-background-brand-primary !default;
+$ilc-section-item-default-bg-disabled: $ilc-background-disabled !default;
+$ilc-section-item-default-text: $ilc-text-primary !default;
+$ilc-section-item-default-text-hover: $ilc-text-primary-hover !default;
+$ilc-section-item-default-text-focused: $ilc-text-primary !default;
+$ilc-section-item-default-text-disabled: $ilc-text-disabled !default;
+$ilc-section-item-active-bg-hover: $ilc-background-brand-primary !default;
+$ilc-section-item-active-bg-focused: $ilc-background-brand-primary !default;
+$ilc-section-item-active-bg-disabled: $ilc-background-disabled !default;
+$ilc-section-item-active-text: $ilc-text-brand !default;
+$ilc-section-item-active-text-hover: $ilc-text-brand-hover !default;
+$ilc-section-item-active-text-focused: $ilc-text-brand !default;
+$ilc-section-item-active-text-disabled: $ilc-text-disabled !default;
+$ilc-section-bg: $ilc-background-tertiary !default;
 
 $tokens: (
   'colors': (
@@ -1396,24 +1397,27 @@ $tokens: (
     'padding-bottom': $ilc-dialog-padding-bottom
   ),
   'section': (
-    'default': (
-      'bg-hover': $ilc-section-default-bg-hover,
-      'bg-focused': $ilc-section-default-bg-focused,
-      'bg-disabled': $ilc-section-default-bg-disabled,
-      'text': $ilc-section-default-text,
-      'text-hover': $ilc-section-default-text-hover,
-      'text-focused': $ilc-section-default-text-focused,
-      'text-disabled': $ilc-section-default-text-disabled
+    'item': (
+      'default': (
+        'bg-hover': $ilc-section-item-default-bg-hover,
+        'bg-focused': $ilc-section-item-default-bg-focused,
+        'bg-disabled': $ilc-section-item-default-bg-disabled,
+        'text': $ilc-section-item-default-text,
+        'text-hover': $ilc-section-item-default-text-hover,
+        'text-focused': $ilc-section-item-default-text-focused,
+        'text-disabled': $ilc-section-item-default-text-disabled
+      ),
+      'active': (
+        'bg-hover': $ilc-section-item-active-bg-hover,
+        'bg-focused': $ilc-section-item-active-bg-focused,
+        'bg-disabled': $ilc-section-item-active-bg-disabled,
+        'text': $ilc-section-item-active-text,
+        'text-hover': $ilc-section-item-active-text-hover,
+        'text-focused': $ilc-section-item-active-text-focused,
+        'text-disabled': $ilc-section-item-active-text-disabled
+      )
     ),
-    'active': (
-      'bg-hover': $ilc-section-active-bg-hover,
-      'bg-focused': $ilc-section-active-bg-focused,
-      'bg-disabled': $ilc-section-active-bg-disabled,
-      'text': $ilc-section-active-text,
-      'text-hover': $ilc-section-active-text-hover,
-      'text-focused': $ilc-section-active-text-focused,
-      'text-disabled': $ilc-section-active-text-disabled
-    )
+    'bg': $ilc-section-bg
   ),
   'tokenSetOrder': (
     '0': 'foundation/colors',
