@@ -190,7 +190,7 @@ $ilc-spacing-320: 20rem !default;
 $ilc-spacing-384: 24rem !default;
 $ilc-spacing-400: 25rem !default;
 $ilc-spacing-full: 62499.9375rem !default;
-$ilc-font-families-open-sans: 'Open Sans' !default;
+$ilc-font-families-sans-serif: 'Noto Sans TC' !default;
 $ilc-line-heights-xl: 32 !default;
 $ilc-line-heights-lg: 28 !default;
 $ilc-line-heights-md: 24 !default;
@@ -220,17 +220,22 @@ $ilc-shadow-xxl: 0 25px 50px 0 #10111340 !default;
 $ilc-shadow-inner: inset 0 2px 4px 0 #1011130f !default;
 $ilc-shadow-xs: 0 1px 2px 0 #10111308, 0 1px 3px 0 #1011131a !default;
 $ilc-opacity-dark: $ilc-opacity-gray-8-60 !default;
-$ilc-heading-heading-xl: $ilc-font-weights-bold $ilc-font-size-xl/$ilc-line-heights-xl $ilc-font-families-open-sans !default;
-$ilc-heading-heading-lg: $ilc-font-weights-bold $ilc-font-size-lg/$ilc-line-heights-lg $ilc-font-families-open-sans !default;
-$ilc-heading-heading-md: $ilc-font-weights-bold $ilc-font-size-md/$ilc-line-heights-md $ilc-font-families-open-sans !default;
-$ilc-heading-heading-sm: $ilc-font-weights-bold $ilc-font-size-sm/$ilc-line-heights-sm $ilc-font-families-open-sans !default;
-$ilc-heading-heading-xs: $ilc-font-weights-bold $ilc-font-size-xs/$ilc-line-heights-xs $ilc-font-families-open-sans !default;
-$ilc-body-lg: $ilc-font-weights-regular $ilc-font-size-lg/$ilc-line-heights-lg $ilc-font-families-open-sans !default;
-$ilc-body-md: $ilc-font-weights-regular $ilc-font-size-md/$ilc-line-heights-md $ilc-font-families-open-sans !default;
-$ilc-body-sm: $ilc-font-weights-regular $ilc-font-size-sm/$ilc-line-heights-sm $ilc-font-families-open-sans !default;
-$ilc-caption-sm: $ilc-font-weights-regular $ilc-font-size-sm/$ilc-line-heights-sm $ilc-font-families-open-sans !default;
-$ilc-caption-sm-uppercase: $ilc-font-weights-regular $ilc-font-size-sm/$ilc-line-heights-sm $ilc-font-families-open-sans !default;
-$ilc-caption-xs: $ilc-font-weights-regular $ilc-font-size-xs/$ilc-line-heights-xs $ilc-font-families-open-sans !default;
+$ilc-heading-heading-xl: $ilc-font-weights-bold $ilc-font-size-xl/$ilc-line-heights-xl $ilc-font-families-sans-serif !default;
+$ilc-heading-heading-lg: $ilc-font-weights-bold $ilc-font-size-lg/$ilc-line-heights-lg $ilc-font-families-sans-serif !default;
+$ilc-heading-heading-md: $ilc-font-weights-bold $ilc-font-size-md/$ilc-line-heights-md $ilc-font-families-sans-serif !default;
+$ilc-heading-heading-sm: $ilc-font-weights-bold $ilc-font-size-sm/$ilc-line-heights-sm $ilc-font-families-sans-serif !default;
+$ilc-heading-heading-xs: $ilc-font-weights-bold $ilc-font-size-xs/$ilc-line-heights-xs $ilc-font-families-sans-serif !default;
+$ilc-body-lg-medium: $ilc-font-weights-medium $ilc-font-size-lg/$ilc-line-heights-lg $ilc-font-families-sans-serif !default;
+$ilc-body-lg-regular: $ilc-font-weights-regular $ilc-font-size-lg/$ilc-line-heights-lg $ilc-font-families-sans-serif !default;
+$ilc-body-md-medium: $ilc-font-weights-medium $ilc-font-size-md/$ilc-line-heights-md $ilc-font-families-sans-serif !default;
+$ilc-body-md-regular: $ilc-font-weights-regular $ilc-font-size-md/$ilc-line-heights-md $ilc-font-families-sans-serif !default;
+$ilc-body-sm-regular: $ilc-font-weights-regular $ilc-font-size-sm/$ilc-line-heights-sm $ilc-font-families-sans-serif !default;
+$ilc-body-sm-medium: $ilc-font-weights-medium $ilc-font-size-sm/$ilc-line-heights-sm $ilc-font-families-sans-serif !default;
+$ilc-body-xs-medium: $ilc-font-weights-medium $ilc-font-size-xs/$ilc-line-heights-xs $ilc-font-families-sans-serif !default;
+$ilc-body-xs-regular: $ilc-font-weights-regular $ilc-font-size-xs/$ilc-line-heights-xs $ilc-font-families-sans-serif !default;
+$ilc-caption-sm: $ilc-font-weights-regular $ilc-font-size-sm/$ilc-line-heights-sm $ilc-font-families-sans-serif !default;
+$ilc-caption-sm-uppercase: $ilc-font-weights-regular $ilc-font-size-sm/$ilc-line-heights-sm $ilc-font-families-sans-serif !default;
+$ilc-caption-xs: $ilc-font-weights-regular $ilc-font-size-xs/$ilc-line-heights-xs $ilc-font-families-sans-serif !default;
 $ilc-background-primary: $ilc-colors-base-white !default;
 $ilc-background-primary-hover: $ilc-colors-dark-1 !default;
 $ilc-background-secondary: $ilc-colors-dark-1 !default;
@@ -842,7 +847,7 @@ $tokens: (
     'full': $ilc-spacing-full
   ),
   'fontFamilies': (
-    'open-sans': $ilc-font-families-open-sans
+    'sans-serif': $ilc-font-families-sans-serif
   ),
   'lineHeights': (
     'xl': $ilc-line-heights-xl,
@@ -880,9 +885,14 @@ $tokens: (
     'heading-xs': $ilc-heading-heading-xs
   ),
   'Body': (
-    'lg': $ilc-body-lg,
-    'md': $ilc-body-md,
-    'sm': $ilc-body-sm
+    'lg-medium': $ilc-body-lg-medium,
+    'lg-regular': $ilc-body-lg-regular,
+    'md-medium': $ilc-body-md-medium,
+    'md-regular': $ilc-body-md-regular,
+    'sm-regular': $ilc-body-sm-regular,
+    'sm-medium': $ilc-body-sm-medium,
+    'xs-medium': $ilc-body-xs-medium,
+    'xs-regular': $ilc-body-xs-regular
   ),
   'Caption': (
     'sm': $ilc-caption-sm,
