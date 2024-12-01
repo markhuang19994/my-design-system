@@ -560,9 +560,11 @@
   --ilc-button-outlined-success-border: var(--ilc-border-success-accent, #039855);
   --ilc-button-outlined-success-border-hover: var(--ilc-border-success-accent, #039855);
   --ilc-button-text-primary-bg-hover: var(--ilc-background-brand-primary, #f0f9ff);
+  --ilc-button-text-primary-bg-focused: var(--ilc-background-brand-primary, #f0f9ff);
   --ilc-button-text-primary-bg-disabled: var(--ilc-background-disabled, #e9eaeb);
   --ilc-button-text-primary-fg: var(--ilc-text-brand, #0086c9);
   --ilc-button-text-primary-fg-hover: var(--ilc-text-brand-hover, #026aa2);
+  --ilc-button-text-primary-fg-focused: var(--ilc-text-brand-hover, #026aa2);
   --ilc-button-text-primary-fg-disabled: var(--ilc-text-disabled, #717680);
   --ilc-button-text-secondary-bg-hover: var(--ilc-background-tertiary, #fafafa);
   --ilc-button-text-secondary-bg-disabled: var(--ilc-background-disabled, #e9eaeb);

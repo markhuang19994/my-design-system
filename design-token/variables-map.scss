@@ -560,9 +560,11 @@ $ilc-button-outlined-success-fg-disabled: $ilc-text-disabled !default;
 $ilc-button-outlined-success-border: $ilc-border-success-accent !default;
 $ilc-button-outlined-success-border-hover: $ilc-border-success-accent !default;
 $ilc-button-text-primary-bg-hover: $ilc-background-brand-primary !default;
+$ilc-button-text-primary-bg-focused: $ilc-background-brand-primary !default;
 $ilc-button-text-primary-bg-disabled: $ilc-background-disabled !default;
 $ilc-button-text-primary-fg: $ilc-text-brand !default;
 $ilc-button-text-primary-fg-hover: $ilc-text-brand-hover !default;
+$ilc-button-text-primary-fg-focused: $ilc-text-brand-hover !default;
 $ilc-button-text-primary-fg-disabled: $ilc-text-disabled !default;
 $ilc-button-text-secondary-bg-hover: $ilc-background-tertiary !default;
 $ilc-button-text-secondary-bg-disabled: $ilc-background-disabled !default;
@@ -1295,9 +1297,11 @@ $tokens: (
     'text': (
       'primary': (
         'bg-hover': $ilc-button-text-primary-bg-hover,
+        'bg-focused': $ilc-button-text-primary-bg-focused,
         'bg-disabled': $ilc-button-text-primary-bg-disabled,
         'fg': $ilc-button-text-primary-fg,
         'fg-hover': $ilc-button-text-primary-fg-hover,
+        'fg-focused': $ilc-button-text-primary-fg-focused,
         'fg-disabled': $ilc-button-text-primary-fg-disabled
       ),
       'secondary': (
