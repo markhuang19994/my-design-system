@@ -196,8 +196,12 @@ $ilc-line-heights-lg: 28 !default;
 $ilc-line-heights-md: 24 !default;
 $ilc-line-heights-sm: 22 !default;
 $ilc-line-heights-xs: 18 !default;
-$ilc-font-weights-semi-bold: 600 !default;
+$ilc-font-weights-black: 900 !default;
+$ilc-font-weights-bold: 700 !default;
+$ilc-font-weights-medium: 500 !default;
 $ilc-font-weights-regular: 400 !default;
+$ilc-font-weights-light: 300 !default;
+$ilc-font-weights-thin: 100 !default;
 $ilc-font-size-xs: 12px !default;
 $ilc-font-size-sm: 14px !default;
 $ilc-font-size-md: 16px !default;
@@ -216,11 +220,11 @@ $ilc-shadow-xxl: 0 25px 50px 0 #10111340 !default;
 $ilc-shadow-inner: inset 0 2px 4px 0 #1011130f !default;
 $ilc-shadow-xs: 0 1px 2px 0 #10111308, 0 1px 3px 0 #1011131a !default;
 $ilc-opacity-dark: $ilc-opacity-gray-8-60 !default;
-$ilc-heading-heading-xl: $ilc-font-weights-semi-bold $ilc-font-size-xl/$ilc-line-heights-xl $ilc-font-families-open-sans !default;
-$ilc-heading-heading-lg: $ilc-font-weights-semi-bold $ilc-font-size-lg/$ilc-line-heights-lg $ilc-font-families-open-sans !default;
-$ilc-heading-heading-md: $ilc-font-weights-semi-bold $ilc-font-size-md/$ilc-line-heights-md $ilc-font-families-open-sans !default;
-$ilc-heading-heading-sm: $ilc-font-weights-semi-bold $ilc-font-size-sm/$ilc-line-heights-sm $ilc-font-families-open-sans !default;
-$ilc-heading-heading-xs: $ilc-font-weights-semi-bold $ilc-font-size-xs/$ilc-line-heights-xs $ilc-font-families-open-sans !default;
+$ilc-heading-heading-xl: $ilc-font-weights-bold $ilc-font-size-xl/$ilc-line-heights-xl $ilc-font-families-open-sans !default;
+$ilc-heading-heading-lg: $ilc-font-weights-bold $ilc-font-size-lg/$ilc-line-heights-lg $ilc-font-families-open-sans !default;
+$ilc-heading-heading-md: $ilc-font-weights-bold $ilc-font-size-md/$ilc-line-heights-md $ilc-font-families-open-sans !default;
+$ilc-heading-heading-sm: $ilc-font-weights-bold $ilc-font-size-sm/$ilc-line-heights-sm $ilc-font-families-open-sans !default;
+$ilc-heading-heading-xs: $ilc-font-weights-bold $ilc-font-size-xs/$ilc-line-heights-xs $ilc-font-families-open-sans !default;
 $ilc-body-lg: $ilc-font-weights-regular $ilc-font-size-lg/$ilc-line-heights-lg $ilc-font-families-open-sans !default;
 $ilc-body-md: $ilc-font-weights-regular $ilc-font-size-md/$ilc-line-heights-md $ilc-font-families-open-sans !default;
 $ilc-body-sm: $ilc-font-weights-regular $ilc-font-size-sm/$ilc-line-heights-sm $ilc-font-families-open-sans !default;
@@ -588,7 +592,8 @@ $ilc-input-default-input-border-focused: $ilc-border-brand !default;
 $ilc-input-default-input-text-disbled: $ilc-text-disabled !default;
 $ilc-input-default-input-bg-disbled: $ilc-background-disabled !default;
 $ilc-input-default-input-border-disabled: $ilc-border-disabled !default;
-$ilc-input-default-input-border: $ilc-border-neutral-accent !default;
+$ilc-input-default-input-border: $ilc-border-primary !default;
+$ilc-input-default-input-border-hover: $ilc-border-primary-hover !default;
 $ilc-input-default-input-fg: $ilc-border-brand !default;
 $ilc-input-default-label-attention: $ilc-text-warning !default;
 $ilc-input-error-label-text: $ilc-text-primary !default;
@@ -845,8 +850,12 @@ $tokens: (
     'xs': $ilc-line-heights-xs
   ),
   'fontWeights': (
-    'semi-bold': $ilc-font-weights-semi-bold,
-    'regular': $ilc-font-weights-regular
+    'black': $ilc-font-weights-black,
+    'bold': $ilc-font-weights-bold,
+    'medium': $ilc-font-weights-medium,
+    'regular': $ilc-font-weights-regular,
+    'light': $ilc-font-weights-light,
+    'thin': $ilc-font-weights-thin
   ),
   'fontSize': (
     'xs': $ilc-font-size-xs,
@@ -1332,6 +1341,7 @@ $tokens: (
       'input-bg-disbled': $ilc-input-default-input-bg-disbled,
       'input-border-disabled': $ilc-input-default-input-border-disabled,
       'input-border': $ilc-input-default-input-border,
+      'input-border-hover': $ilc-input-default-input-border-hover,
       'input-fg': $ilc-input-default-input-fg,
       'label-attention': $ilc-input-default-label-attention
     ),
