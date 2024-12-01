@@ -620,4 +620,18 @@
   --ilc-dialog-padding-x: var(--ilc-padding-4, 1rem);
   --ilc-dialog-padding-top: var(--ilc-padding-5, 1.25rem);
   --ilc-dialog-padding-bottom: var(--ilc-padding-4, 1rem);
+  --ilc-section-default-bg-hover: var(--ilc-background-brand-primary, #f0f9ff);
+  --ilc-section-default-bg-focused: var(--ilc-background-brand-primary, #f0f9ff);
+  --ilc-section-default-bg-disabled: var(--ilc-background-disabled, #e9eaeb);
+  --ilc-section-default-text: var(--ilc-text-primary, #252b37);
+  --ilc-section-default-text-hover: var(--ilc-text-primary-hover, #101828);
+  --ilc-section-default-text-focused: var(--ilc-text-primary, #252b37);
+  --ilc-section-default-text-disabled: var(--ilc-text-disabled, #717680);
+  --ilc-section-active-bg-hover: var(--ilc-background-brand-primary, #f0f9ff);
+  --ilc-section-active-bg-focused: var(--ilc-background-brand-primary, #f0f9ff);
+  --ilc-section-active-bg-disabled: var(--ilc-background-disabled, #e9eaeb);
+  --ilc-section-active-text: var(--ilc-text-brand, #0086c9);
+  --ilc-section-active-text-hover: var(--ilc-text-brand-hover, #026aa2);
+  --ilc-section-active-text-focused: var(--ilc-text-brand, #0086c9);
+  --ilc-section-active-text-disabled: var(--ilc-text-disabled, #717680);
 }
