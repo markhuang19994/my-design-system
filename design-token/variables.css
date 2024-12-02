@@ -565,6 +565,8 @@
   --ilc-button-outlined-success-fg-disabled: var(--ilc-text-disabled, #717680);
   --ilc-button-outlined-success-border: var(--ilc-border-success-accent, #039855);
   --ilc-button-outlined-success-border-hover: var(--ilc-border-success-accent, #039855);
+  --ilc-button-outlined-border-width-sm: var(--ilc-stroke-sm, 1px);
+  --ilc-button-outlined-border-width-md: var(--ilc-stroke-sm, 1px);
   --ilc-button-text-primary-bg-hover: var(--ilc-background-brand-primary, #f0f9ff);
   --ilc-button-text-primary-bg-focused: var(--ilc-background-brand-primary, #f0f9ff);
   --ilc-button-text-primary-bg-disabled: var(--ilc-background-disabled, #e9eaeb);
@@ -596,6 +598,18 @@
   --ilc-button-radius-sm: var(--ilc-raduis-sm, 0.375rem);
   --ilc-button-radius-md: var(--ilc-raduis-sm, 0.375rem);
   --ilc-button-radius-lg: var(--ilc-raduis-sm, 0.375rem);
+  --ilc-button-sizing-sm-width: var(--ilc-width-9, 2.25rem);
+  --ilc-button-sizing-sm-height: var(--ilc-height-9, 2.25rem);
+  --ilc-button-sizing-md-width: var(--ilc-width-10, 2.5rem);
+  --ilc-button-sizing-md-height: var(--ilc-height-10, 2.5rem);
+  --ilc-button-sizing-xs-width: var(--ilc-width-7, 1.75rem);
+  --ilc-button-sizing-xs-height: var(--ilc-height-7, 1.75rem);
+  --ilc-button-sizing-lg-width: var(--ilc-width-12, 3rem);
+  --ilc-button-sizing-lg-height: var(--ilc-height-12, 3rem);
+  --ilc-button-spacing-sm-padding-x: var(--ilc-padding-3, 0.75rem);
+  --ilc-button-spacing-sm-gap: var(--ilc-gap-2px, 2px);
+  --ilc-button-spacing-md-padding-x: var(--ilc-padding-3, 0.75rem);
+  --ilc-button-spacing-md-gap: var(--ilc-gap-2px, 2px);
   --ilc-input-default-label-text: var(--ilc-text-primary, #252b37);
   --ilc-input-default-description-text: var(--ilc-text-secondary, #414651);
   --ilc-input-default-input-text: var(--ilc-text-black, #000000);

@@ -565,6 +565,8 @@ $ilc-button-outlined-success-fg-hover: $ilc-text-success-hover !default;
 $ilc-button-outlined-success-fg-disabled: $ilc-text-disabled !default;
 $ilc-button-outlined-success-border: $ilc-border-success-accent !default;
 $ilc-button-outlined-success-border-hover: $ilc-border-success-accent !default;
+$ilc-button-outlined-border-width-sm: $ilc-stroke-sm !default;
+$ilc-button-outlined-border-width-md: $ilc-stroke-sm !default;
 $ilc-button-text-primary-bg-hover: $ilc-background-brand-primary !default;
 $ilc-button-text-primary-bg-focused: $ilc-background-brand-primary !default;
 $ilc-button-text-primary-bg-disabled: $ilc-background-disabled !default;
@@ -596,6 +598,18 @@ $ilc-button-radius-xs: $ilc-raduis-xs !default;
 $ilc-button-radius-sm: $ilc-raduis-sm !default;
 $ilc-button-radius-md: $ilc-raduis-sm !default;
 $ilc-button-radius-lg: $ilc-raduis-sm !default;
+$ilc-button-sizing-sm-width: $ilc-width-9 !default;
+$ilc-button-sizing-sm-height: $ilc-height-9 !default;
+$ilc-button-sizing-md-width: $ilc-width-10 !default;
+$ilc-button-sizing-md-height: $ilc-height-10 !default;
+$ilc-button-sizing-xs-width: $ilc-width-7 !default;
+$ilc-button-sizing-xs-height: $ilc-height-7 !default;
+$ilc-button-sizing-lg-width: $ilc-width-12 !default;
+$ilc-button-sizing-lg-height: $ilc-height-12 !default;
+$ilc-button-spacing-sm-padding-x: $ilc-padding-3 !default;
+$ilc-button-spacing-sm-gap: $ilc-gap-2px !default;
+$ilc-button-spacing-md-padding-x: $ilc-padding-3 !default;
+$ilc-button-spacing-md-gap: $ilc-gap-2px !default;
 $ilc-input-default-label-text: $ilc-text-primary !default;
 $ilc-input-default-description-text: $ilc-text-secondary !default;
 $ilc-input-default-input-text: $ilc-text-black !default;
@@ -1323,6 +1337,10 @@ $tokens: (
         'fg-disabled': $ilc-button-outlined-success-fg-disabled,
         'border': $ilc-button-outlined-success-border,
         'border-hover': $ilc-button-outlined-success-border-hover
+      ),
+      'border-width': (
+        'sm': $ilc-button-outlined-border-width-sm,
+        'md': $ilc-button-outlined-border-width-md
       )
     ),
     'text': (
@@ -1369,6 +1387,34 @@ $tokens: (
       'sm': $ilc-button-radius-sm,
       'md': $ilc-button-radius-md,
       'lg': $ilc-button-radius-lg
+    ),
+    'sizing': (
+      'sm': (
+        'width': $ilc-button-sizing-sm-width,
+        'height': $ilc-button-sizing-sm-height
+      ),
+      'md': (
+        'width': $ilc-button-sizing-md-width,
+        'height': $ilc-button-sizing-md-height
+      ),
+      'xs': (
+        'width': $ilc-button-sizing-xs-width,
+        'height': $ilc-button-sizing-xs-height
+      ),
+      'lg': (
+        'width': $ilc-button-sizing-lg-width,
+        'height': $ilc-button-sizing-lg-height
+      )
+    ),
+    'spacing': (
+      'sm': (
+        'padding-x': $ilc-button-spacing-sm-padding-x,
+        'gap': $ilc-button-spacing-sm-gap
+      ),
+      'md': (
+        'padding-x': $ilc-button-spacing-md-padding-x,
+        'gap': $ilc-button-spacing-md-gap
+      )
     )
   ),
   'input': (
