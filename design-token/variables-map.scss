@@ -374,13 +374,14 @@ $ilc-margin-20: $ilc-spacing-80 !default;
 $ilc-margin-2px: $ilc-spacing-2 !default;
 $ilc-margin-1s: $ilc-spacing-6 !default;
 $ilc-margin-2s: $ilc-spacing-10 !default;
-$ilc-raduis-xs: $ilc-spacing-2 !default;
-$ilc-raduis-sm: $ilc-spacing-4 !default;
+$ilc-raduis-2xs: $ilc-spacing-2 !default;
+$ilc-raduis-xs: $ilc-spacing-4 !default;
+$ilc-raduis-sm: $ilc-spacing-6 !default;
 $ilc-raduis-md: $ilc-spacing-8 !default;
 $ilc-raduis-lg: $ilc-spacing-10 !default;
-$ilc-raduis-full: $ilc-spacing-full !default;
 $ilc-raduis-xl: $ilc-spacing-16 !default;
 $ilc-raduis-2xl: $ilc-spacing-20 !default;
+$ilc-raduis-full: $ilc-spacing-full !default;
 $ilc-gap-1: $ilc-spacing-4 !default;
 $ilc-gap-2: $ilc-spacing-8 !default;
 $ilc-gap-3: $ilc-spacing-12 !default;
@@ -591,6 +592,10 @@ $ilc-button-text-success-bg-disabled: $ilc-background-disabled !default;
 $ilc-button-text-success-fg: $ilc-text-success !default;
 $ilc-button-text-success-fg-hover: $ilc-text-success-hover !default;
 $ilc-button-text-success-fg-disabled: $ilc-text-disabled !default;
+$ilc-button-radius-xs: $ilc-raduis-xs !default;
+$ilc-button-radius-sm: $ilc-raduis-sm !default;
+$ilc-button-radius-md: $ilc-raduis-sm !default;
+$ilc-button-radius-lg: $ilc-raduis-sm !default;
 $ilc-input-default-label-text: $ilc-text-primary !default;
 $ilc-input-default-description-text: $ilc-text-secondary !default;
 $ilc-input-default-input-text: $ilc-text-black !default;
@@ -1083,13 +1088,14 @@ $tokens: (
     '2s': $ilc-margin-2s
   ),
   'raduis': (
+    '2xs': $ilc-raduis-2xs,
     'xs': $ilc-raduis-xs,
     'sm': $ilc-raduis-sm,
     'md': $ilc-raduis-md,
     'lg': $ilc-raduis-lg,
-    'full': $ilc-raduis-full,
     'xl': $ilc-raduis-xl,
-    '2xl': $ilc-raduis-2xl
+    '2xl': $ilc-raduis-2xl,
+    'full': $ilc-raduis-full
   ),
   'gap': (
     '1': $ilc-gap-1,
@@ -1357,6 +1363,12 @@ $tokens: (
         'fg-hover': $ilc-button-text-success-fg-hover,
         'fg-disabled': $ilc-button-text-success-fg-disabled
       )
+    ),
+    'radius': (
+      'xs': $ilc-button-radius-xs,
+      'sm': $ilc-button-radius-sm,
+      'md': $ilc-button-radius-md,
+      'lg': $ilc-button-radius-lg
     )
   ),
   'input': (

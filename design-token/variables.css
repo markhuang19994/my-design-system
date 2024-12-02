@@ -374,13 +374,14 @@
   --ilc-margin-2px: var(--ilc-spacing-2, 2px);
   --ilc-margin-1s: var(--ilc-spacing-6, 0.375rem);
   --ilc-margin-2s: var(--ilc-spacing-10, 0.625rem);
-  --ilc-raduis-xs: var(--ilc-spacing-2, 2px);
-  --ilc-raduis-sm: var(--ilc-spacing-4, 0.25rem);
+  --ilc-raduis-2xs: var(--ilc-spacing-2, 2px);
+  --ilc-raduis-xs: var(--ilc-spacing-4, 0.25rem);
+  --ilc-raduis-sm: var(--ilc-spacing-6, 0.375rem);
   --ilc-raduis-md: var(--ilc-spacing-8, 0.5rem);
   --ilc-raduis-lg: var(--ilc-spacing-10, 0.625rem);
-  --ilc-raduis-full: var(--ilc-spacing-full, 62499.9375rem);
   --ilc-raduis-xl: var(--ilc-spacing-16, 1rem);
   --ilc-raduis-2xl: var(--ilc-spacing-20, 1.25rem);
+  --ilc-raduis-full: var(--ilc-spacing-full, 62499.9375rem);
   --ilc-gap-1: var(--ilc-spacing-4, 0.25rem);
   --ilc-gap-2: var(--ilc-spacing-8, 0.5rem);
   --ilc-gap-3: var(--ilc-spacing-12, 0.75rem);
@@ -591,6 +592,10 @@
   --ilc-button-text-success-fg: var(--ilc-text-success, #039855);
   --ilc-button-text-success-fg-hover: var(--ilc-text-success-hover, #027a48);
   --ilc-button-text-success-fg-disabled: var(--ilc-text-disabled, #717680);
+  --ilc-button-radius-xs: var(--ilc-raduis-xs, 0.25rem);
+  --ilc-button-radius-sm: var(--ilc-raduis-sm, 0.375rem);
+  --ilc-button-radius-md: var(--ilc-raduis-sm, 0.375rem);
+  --ilc-button-radius-lg: var(--ilc-raduis-sm, 0.375rem);
   --ilc-input-default-label-text: var(--ilc-text-primary, #252b37);
   --ilc-input-default-description-text: var(--ilc-text-secondary, #414651);
   --ilc-input-default-input-text: var(--ilc-text-black, #000000);
