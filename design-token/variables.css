@@ -225,7 +225,7 @@
   --ilc-text-case-uppercase: uppercase;
   --ilc-text-decoration-none: none;
   --ilc-paragraph-indent-0: 0px;
-  --ilc-opacity-dark: var(--ilc-opacity-gray-8-60, rgba(37, 43, 55, 0.6));
+  --ilc-opacity-overlay: var(--ilc-opacity-gray-8-60, rgba(37, 43, 55, 0.6));
   --ilc-heading-heading-xl: var(--ilc-font-weights-bold, 7var(--ilc-paragraph-spacing-0, 0)0) var(--ilc-font-size-xl, 2var(--ilc-paragraph-indent-0, 0px))/var(--ilc-line-heights-xl, 32) var(--ilc-font-families-sans-serif, 'Noto Sans TC');
   --ilc-heading-heading-lg: var(--ilc-font-weights-bold, 7var(--ilc-paragraph-spacing-0, 0)0) var(--ilc-font-size-lg, 18px)/var(--ilc-line-heights-lg, 28) var(--ilc-font-families-sans-serif, 'Noto Sans TC');
   --ilc-heading-heading-md: var(--ilc-font-weights-bold, 7var(--ilc-paragraph-spacing-0, 0)0) var(--ilc-font-size-md, 16px)/var(--ilc-line-heights-md, 24) var(--ilc-font-families-sans-serif, 'Noto Sans TC');

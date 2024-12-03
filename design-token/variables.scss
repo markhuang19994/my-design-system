@@ -225,7 +225,7 @@ $ilc-text-case-none: none !default;
 $ilc-text-case-uppercase: uppercase !default;
 $ilc-text-decoration-none: none !default;
 $ilc-paragraph-indent-0: 0px !default;
-$ilc-opacity-dark: $ilc-opacity-gray-8-60 !default;
+$ilc-opacity-overlay: $ilc-opacity-gray-8-60 !default;
 $ilc-heading-heading-xl: $ilc-font-weights-bold $ilc-font-size-xl/$ilc-line-heights-xl $ilc-font-families-sans-serif !default;
 $ilc-heading-heading-lg: $ilc-font-weights-bold $ilc-font-size-lg/$ilc-line-heights-lg $ilc-font-families-sans-serif !default;
 $ilc-heading-heading-md: $ilc-font-weights-bold $ilc-font-size-md/$ilc-line-heights-md $ilc-font-families-sans-serif !default;
@@ -851,7 +851,7 @@ $tokens: (
     'gray-8-60': $ilc-opacity-gray-8-60,
     'gray-8-40': $ilc-opacity-gray-8-40,
     'gray-8-20': $ilc-opacity-gray-8-20,
-    'dark': $ilc-opacity-dark
+    'overlay': $ilc-opacity-overlay
   ),
   'effects': (
     'shadows': (
