@@ -149,7 +149,19 @@ $ilc-opacity-gray-8-80: rgba(37, 43, 55, 0.8) !default;
 $ilc-opacity-gray-8-60: rgba(37, 43, 55, 0.6) !default;
 $ilc-opacity-gray-8-40: rgba(37, 43, 55, 0.4) !default;
 $ilc-opacity-gray-8-20: rgba(37, 43, 55, 0.2) !default;
-$ilc-test: #ffffff !default;
+$ilc-effects-shadows-xs: rgba(0, 0, 0, 0.05) !default;
+$ilc-effects-shadows-sm-01: rgba(0, 0, 0, 0.1) !default;
+$ilc-effects-shadows-sm-02: rgba(0, 0, 0, 0.06) !default;
+$ilc-effects-shadows-md-01: rgba(0, 0, 0, 0.1) !default;
+$ilc-effects-shadows-md-02: rgba(0, 0, 0, 0.06) !default;
+$ilc-effects-shadows-lg-01: rgba(0, 0, 0, 0.08) !default;
+$ilc-effects-shadows-lg-02: rgba(0, 0, 0, 0.03) !default;
+$ilc-effects-shadows-xl-01: rgba(0, 0, 0, 0.08) !default;
+$ilc-effects-shadows-xl-02: rgba(0, 0, 0, 0.03) !default;
+$ilc-effects-shadows-2xl: rgba(0, 0, 0, 0.18) !default;
+$ilc-effects-shadows-3xl: rgba(0, 0, 0, 0.14) !default;
+$ilc-effects-shadows-inner: rgba(0, 0, 0, 0.05) !default;
+$ilc-effects-shadows-inner-border: rgba(0, 0, 0, 0.18) !default;
 $ilc-spacing-0: 0rem !default;
 $ilc-spacing-1: 1px !default;
 $ilc-spacing-2: 2px !default;
@@ -213,12 +225,6 @@ $ilc-text-case-none: none !default;
 $ilc-text-case-uppercase: uppercase !default;
 $ilc-text-decoration-none: none !default;
 $ilc-paragraph-indent-0: 0px !default;
-$ilc-shadow-md: 0 2px 4px 0 #1011130f, 0 4px 6px 0 #1011131a !default;
-$ilc-shadow-lg: 0 10px 15px 0 #1011131a, 0 4px 6px 0 #1011130d !default;
-$ilc-shadow-xl: 0 20px 25px 0 #1011131a, 0 10px 10px 0 #1011130a !default;
-$ilc-shadow-xxl: 0 25px 50px 0 #10111340 !default;
-$ilc-shadow-inner: inset 0 2px 4px 0 #1011130f !default;
-$ilc-shadow-xs: 0 1px 2px 0 #10111308, 0 1px 3px 0 #1011131a !default;
 $ilc-opacity-dark: $ilc-opacity-gray-8-60 !default;
 $ilc-heading-heading-xl: $ilc-font-weights-bold $ilc-font-size-xl/$ilc-line-heights-xl $ilc-font-families-sans-serif !default;
 $ilc-heading-heading-lg: $ilc-font-weights-bold $ilc-font-size-lg/$ilc-line-heights-lg $ilc-font-families-sans-serif !default;
@@ -324,6 +330,14 @@ $ilc-foreground-warning: $ilc-colors-yellow-6 !default;
 $ilc-foreground-warning-hover: $ilc-colors-yellow-7 !default;
 $ilc-foreground-success: $ilc-colors-green-6 !default;
 $ilc-foreground-success-hover: $ilc-colors-green-7 !default;
+$ilc-shadow-xs: 0 1px 2px 0 $ilc-effects-shadows-xs !default;
+$ilc-shadow-sm: 0 1px 3px 0 $ilc-effects-shadows-sm-01, 0 1px 2px 0 $ilc-effects-shadows-sm-02 !default;
+$ilc-shadow-border-xs: inset 0 0 1px 0 $ilc-effects-shadows-inner-border, inset 0 -2px 0 0 $ilc-effects-shadows-inner !default;
+$ilc-shadow-md: 0 4px 8px -2px $ilc-effects-shadows-md-01, 0 2px 4px -2px $ilc-effects-shadows-md-02 !default;
+$ilc-shadow-lg: 0 12px 16px -4px $ilc-effects-shadows-lg-01, 0 4px 6px -2px $ilc-effects-shadows-lg-02 !default;
+$ilc-shadow-xl: 0 20px 24px -4px $ilc-effects-shadows-xl-01, 0 8px 8px -4px $ilc-effects-shadows-xl-02 !default;
+$ilc-shadow-2xl: 0 24px 48px -12px $ilc-effects-shadows-2xl !default;
+$ilc-shadow-3xl: 0 32px 64px -12px $ilc-effects-shadows-3xl !default;
 $ilc-padding-1: $ilc-spacing-4 !default;
 $ilc-padding-2: $ilc-spacing-8 !default;
 $ilc-padding-3: $ilc-spacing-12 !default;
@@ -839,7 +853,23 @@ $tokens: (
     'gray-8-20': $ilc-opacity-gray-8-20,
     'dark': $ilc-opacity-dark
   ),
-  'test': $ilc-test,
+  'effects': (
+    'shadows': (
+      'xs': $ilc-effects-shadows-xs,
+      'sm-01': $ilc-effects-shadows-sm-01,
+      'sm-02': $ilc-effects-shadows-sm-02,
+      'md-01': $ilc-effects-shadows-md-01,
+      'md-02': $ilc-effects-shadows-md-02,
+      'lg-01': $ilc-effects-shadows-lg-01,
+      'lg-02': $ilc-effects-shadows-lg-02,
+      'xl-01': $ilc-effects-shadows-xl-01,
+      'xl-02': $ilc-effects-shadows-xl-02,
+      '2xl': $ilc-effects-shadows-2xl,
+      '3xl': $ilc-effects-shadows-3xl,
+      'inner': $ilc-effects-shadows-inner,
+      'inner-border': $ilc-effects-shadows-inner-border
+    )
+  ),
   'spacing': (
     '0': $ilc-spacing-0,
     '1': $ilc-spacing-1,
@@ -1042,12 +1072,14 @@ $tokens: (
     'success-hover': $ilc-foreground-success-hover
   ),
   'shadow': (
+    'xs': $ilc-shadow-xs,
+    'sm': $ilc-shadow-sm,
+    'border-xs': $ilc-shadow-border-xs,
     'md': $ilc-shadow-md,
     'lg': $ilc-shadow-lg,
     'xl': $ilc-shadow-xl,
-    'xxl': $ilc-shadow-xxl,
-    'inner': $ilc-shadow-inner,
-    'xs': $ilc-shadow-xs
+    '2xl': $ilc-shadow-2xl,
+    '3xl': $ilc-shadow-3xl
   ),
   'padding': (
     '1': $ilc-padding-1,
