@@ -575,9 +575,11 @@
   --ilc-button-text-primary-fg-focused: var(--ilc-text-brand-hover, #026aa2);
   --ilc-button-text-primary-fg-disabled: var(--ilc-text-disabled, #717680);
   --ilc-button-text-secondary-bg-hover: var(--ilc-background-tertiary, #fafafa);
+  --ilc-button-text-secondary-bg-focused: var(--ilc-background-tertiary, #fafafa);
   --ilc-button-text-secondary-bg-disabled: var(--ilc-background-disabled, #e9eaeb);
   --ilc-button-text-secondary-fg: var(--ilc-text-primary, #252b37);
   --ilc-button-text-secondary-fg-hover: var(--ilc-text-primary-hover, #101828);
+  --ilc-button-text-secondary-fg-focused: var(--ilc-text-primary, #252b37);
   --ilc-button-text-secondary-fg-disabled: var(--ilc-text-disabled, #717680);
   --ilc-button-text-error-bg-hover: var(--ilc-background-error-primary, #fef3f2);
   --ilc-button-text-error-bg-disabled: var(--ilc-background-disabled, #e9eaeb);
