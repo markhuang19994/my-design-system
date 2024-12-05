@@ -484,132 +484,89 @@ $ilc-width-2px: $ilc-spacing-2 !default;
 $ilc-width-1s: $ilc-spacing-6 !default;
 $ilc-width-2s: $ilc-spacing-10 !default;
 $ilc-width-3s: $ilc-spacing-14 !default;
-$ilc-button-filled-primary-bg: $ilc-background-brand-solid !default;
-$ilc-button-filled-primary-bg-hover: $ilc-background-brand-solid-hover !default;
-$ilc-button-filled-primary-bg-disabled: $ilc-background-disabled !default;
-$ilc-button-filled-primary-fg: $ilc-text-white !default;
-$ilc-button-filled-primary-fg-hover: $ilc-text-white !default;
-$ilc-button-filled-primary-fg-disabled: $ilc-text-disabled !default;
-$ilc-button-filled-secondary-bg: $ilc-background-secondary !default;
-$ilc-button-filled-secondary-bg-hover: $ilc-background-secondary-hover !default;
-$ilc-button-filled-secondary-bg-disabled: $ilc-background-disabled !default;
-$ilc-button-filled-secondary-fg: $ilc-text-primary !default;
-$ilc-button-filled-secondary-fg-hover: $ilc-text-primary-hover !default;
-$ilc-button-filled-secondary-fg-disabled: $ilc-text-disabled !default;
-$ilc-button-filled-error-bg: $ilc-background-error-solid !default;
-$ilc-button-filled-error-bg-hover: $ilc-background-error-solid-hover !default;
-$ilc-button-filled-error-bg-disabled: $ilc-background-disabled !default;
-$ilc-button-filled-error-fg: $ilc-text-white !default;
-$ilc-button-filled-error-fg-hover: $ilc-text-white !default;
-$ilc-button-filled-error-fg-disabled: $ilc-text-disabled !default;
-$ilc-button-filled-warning-bg: $ilc-background-warning-solid !default;
-$ilc-button-filled-warning-bg-hover: $ilc-background-warning-solid-hover !default;
-$ilc-button-filled-warning-bg-disabled: $ilc-background-disabled !default;
-$ilc-button-filled-warning-fg: $ilc-text-white !default;
-$ilc-button-filled-warning-fg-hover: $ilc-text-white !default;
-$ilc-button-filled-warning-fg-disabled: $ilc-text-disabled !default;
-$ilc-button-filled-success-bg: $ilc-background-success-solid !default;
-$ilc-button-filled-success-bg-hover: $ilc-background-success-solid-hover !default;
-$ilc-button-filled-success-bg-disabled: $ilc-background-disabled !default;
-$ilc-button-filled-success-fg: $ilc-text-white !default;
-$ilc-button-filled-success-fg-hover: $ilc-text-white !default;
-$ilc-button-filled-success-fg-disabled: $ilc-text-disabled !default;
-$ilc-button-subtle-primary-bg: $ilc-background-brand-primary !default;
-$ilc-button-subtle-primary-bg-hover: $ilc-background-brand-primary-hover !default;
-$ilc-button-subtle-primary-bg-disabled: $ilc-background-disabled !default;
-$ilc-button-subtle-primary-fg: $ilc-text-brand !default;
-$ilc-button-subtle-primary-fg-hover: $ilc-text-brand-hover !default;
-$ilc-button-subtle-primary-fg-disabled: $ilc-text-disabled !default;
-$ilc-button-subtle-secondary-bg: $ilc-background-tertiary !default;
-$ilc-button-subtle-secondary-bg-hover: $ilc-background-tertiary-hover !default;
-$ilc-button-subtle-secondary-bg-disabled: $ilc-background-disabled !default;
-$ilc-button-subtle-secondary-fg: $ilc-text-primary !default;
-$ilc-button-subtle-secondary-fg-hover: $ilc-text-primary-hover !default;
-$ilc-button-subtle-secondary-fg-disabled: $ilc-text-disabled !default;
-$ilc-button-subtle-error-bg: $ilc-background-error-primary !default;
-$ilc-button-subtle-error-bg-hover: $ilc-background-error-primary-hover !default;
-$ilc-button-subtle-error-bg-disabled: $ilc-background-disabled !default;
-$ilc-button-subtle-error-fg: $ilc-text-error !default;
-$ilc-button-subtle-error-fg-hover: $ilc-text-error-hover !default;
-$ilc-button-subtle-error-fg-disabled: $ilc-text-disabled !default;
-$ilc-button-subtle-warning-bg: $ilc-background-warning-primary !default;
-$ilc-button-subtle-warning-bg-hover: $ilc-background-warning-primary-hover !default;
-$ilc-button-subtle-warning-bg-disabled: $ilc-background-disabled !default;
-$ilc-button-subtle-warning-fg: $ilc-text-warning !default;
-$ilc-button-subtle-warning-fg-hover: $ilc-text-warning-hover !default;
-$ilc-button-subtle-warning-fg-disabled: $ilc-text-disabled !default;
-$ilc-button-subtle-success-bg: $ilc-background-success-primary !default;
-$ilc-button-subtle-success-bg-hover: $ilc-background-success-primary-hover !default;
-$ilc-button-subtle-success-bg-disabled: $ilc-background-disabled !default;
-$ilc-button-subtle-success-fg: $ilc-text-success !default;
-$ilc-button-subtle-success-fg-hover: $ilc-text-success-hover !default;
-$ilc-button-subtle-success-fg-disabled: $ilc-text-disabled !default;
-$ilc-button-outlined-primary-bg-hover: $ilc-background-brand-primary !default;
-$ilc-button-outlined-primary-fg: $ilc-text-brand !default;
-$ilc-button-outlined-primary-fg-hover: $ilc-text-brand-hover !default;
-$ilc-button-outlined-primary-fg-disabled: $ilc-text-disabled !default;
-$ilc-button-outlined-primary-border: $ilc-border-brand !default;
-$ilc-button-outlined-primary-border-hover: $ilc-border-brand-hover !default;
-$ilc-button-outlined-primary-bg-disabled: $ilc-background-disabled !default;
-$ilc-button-outlined-secondary-bg-hover: $ilc-background-tertiary !default;
-$ilc-button-outlined-secondary-bg-disabled: $ilc-background-disabled !default;
-$ilc-button-outlined-secondary-fg: $ilc-text-primary !default;
-$ilc-button-outlined-secondary-fg-hover: $ilc-text-primary-hover !default;
-$ilc-button-outlined-secondary-fg-disabled: $ilc-text-disabled !default;
-$ilc-button-outlined-secondary-border: $ilc-border-neutral-accent !default;
-$ilc-button-outlined-secondary-border-hover: $ilc-border-neutral-accent !default;
+$ilc-button-primary-brand-bg: $ilc-background-brand-solid !default;
+$ilc-button-primary-brand-bg-hover: $ilc-background-brand-solid-hover !default;
+$ilc-button-primary-brand-bg-active: $ilc-background-brand-solid-hover !default;
+$ilc-button-primary-brand-bg-disabled: $ilc-background-disabled !default;
+$ilc-button-primary-brand-fg: $ilc-text-white !default;
+$ilc-button-primary-brand-fg-hover: $ilc-text-white !default;
+$ilc-button-primary-brand-fg-focus: $ilc-text-white !default;
+$ilc-button-primary-brand-fg-disabled: $ilc-text-disabled !default;
+$ilc-button-primary-error-bg: $ilc-background-error-solid !default;
+$ilc-button-primary-error-bg-hover: $ilc-background-error-solid-hover !default;
+$ilc-button-primary-error-bg-focus: $ilc-background-error-solid-hover !default;
+$ilc-button-primary-error-bg-disabled: $ilc-background-disabled !default;
+$ilc-button-primary-error-fg: $ilc-text-white !default;
+$ilc-button-primary-error-fg-hover: $ilc-text-white !default;
+$ilc-button-primary-error-fg-focus: $ilc-text-white !default;
+$ilc-button-primary-error-fg-disabled: $ilc-text-disabled !default;
+$ilc-button-secondary-gray-bg: $ilc-background-tertiary !default;
+$ilc-button-secondary-gray-bg-hover: $ilc-background-tertiary-hover !default;
+$ilc-button-secondary-gray-bg-focus: $ilc-background-tertiary-hover !default;
+$ilc-button-secondary-gray-bg-disabled: $ilc-background-disabled !default;
+$ilc-button-secondary-gray-fg: $ilc-text-primary !default;
+$ilc-button-secondary-gray-fg-hover: $ilc-text-primary-hover !default;
+$ilc-button-secondary-gray-fg-focus: $ilc-text-primary !default;
+$ilc-button-secondary-gray-fg-disabled: $ilc-text-disabled !default;
+$ilc-button-secondary-error-bg: $ilc-background-error-primary !default;
+$ilc-button-secondary-error-bg-hover: $ilc-background-error-primary-hover !default;
+$ilc-button-secondary-error-bg-focus: $ilc-background-error-primary-hover !default;
+$ilc-button-secondary-error-bg-disabled: $ilc-background-disabled !default;
+$ilc-button-secondary-error-fg: $ilc-text-error !default;
+$ilc-button-secondary-error-fg-hover: $ilc-text-error-hover !default;
+$ilc-button-secondary-error-fg-focus: $ilc-text-error !default;
+$ilc-button-secondary-error-fg-disabled: $ilc-text-disabled !default;
+$ilc-button-outlined-brand-bg-hover: $ilc-background-brand-primary !default;
+$ilc-button-outlined-brand-bg-focus: $ilc-background-brand-primary !default;
+$ilc-button-outlined-brand-bg-disabled: $ilc-background-disabled !default;
+$ilc-button-outlined-brand-fg: $ilc-text-brand !default;
+$ilc-button-outlined-brand-fg-hover: $ilc-text-brand-hover !default;
+$ilc-button-outlined-brand-fg-focus: $ilc-text-brand !default;
+$ilc-button-outlined-brand-fg-disabled: $ilc-text-disabled !default;
+$ilc-button-outlined-brand-border: $ilc-border-brand !default;
+$ilc-button-outlined-brand-border-hover: $ilc-border-brand-hover !default;
+$ilc-button-outlined-brand-border-focus: $ilc-border-brand !default;
+$ilc-button-outlined-gray-bg-hover: $ilc-background-tertiary !default;
+$ilc-button-outlined-gray-bg-focus: $ilc-background-tertiary !default;
+$ilc-button-outlined-gray-bg-disabled: $ilc-background-disabled !default;
+$ilc-button-outlined-gray-fg: $ilc-text-primary !default;
+$ilc-button-outlined-gray-fg-hover: $ilc-text-primary-hover !default;
+$ilc-button-outlined-gray-fg-focus: $ilc-text-primary !default;
+$ilc-button-outlined-gray-fg-disabled: $ilc-text-disabled !default;
+$ilc-button-outlined-gray-border: $ilc-border-neutral-accent !default;
+$ilc-button-outlined-gray-border-hover: $ilc-border-neutral-accent !default;
+$ilc-button-outlined-gray-border-focus: $ilc-border-neutral-accent !default;
 $ilc-button-outlined-error-bg-hover: $ilc-background-error-primary !default;
+$ilc-button-outlined-error-bg-focus: $ilc-background-error-primary !default;
 $ilc-button-outlined-error-bg-disabled: $ilc-background-disabled !default;
 $ilc-button-outlined-error-fg: $ilc-text-error !default;
 $ilc-button-outlined-error-fg-hover: $ilc-text-error-hover !default;
+$ilc-button-outlined-error-fg-focus: $ilc-text-error !default;
 $ilc-button-outlined-error-fg-disabled: $ilc-text-disabled !default;
 $ilc-button-outlined-error-border: $ilc-border-error-accent !default;
 $ilc-button-outlined-error-border-hover: $ilc-border-error-accent !default;
-$ilc-button-outlined-warning-bg-hover: $ilc-background-warning-primary !default;
-$ilc-button-outlined-warning-bg-disabled: $ilc-background-disabled !default;
-$ilc-button-outlined-warning-fg: $ilc-text-warning !default;
-$ilc-button-outlined-warning-fg-hover: $ilc-text-warning-hover !default;
-$ilc-button-outlined-warning-fg-disabled: $ilc-text-disabled !default;
-$ilc-button-outlined-warning-border: $ilc-border-warning-accent !default;
-$ilc-button-outlined-warning-border-hover: $ilc-border-warning-accent !default;
-$ilc-button-outlined-success-bg-hover: $ilc-background-success-primary !default;
-$ilc-button-outlined-success-bg-disabled: $ilc-background-disabled !default;
-$ilc-button-outlined-success-fg: $ilc-text-success !default;
-$ilc-button-outlined-success-fg-hover: $ilc-text-success-hover !default;
-$ilc-button-outlined-success-fg-disabled: $ilc-text-disabled !default;
-$ilc-button-outlined-success-border: $ilc-border-success-accent !default;
-$ilc-button-outlined-success-border-hover: $ilc-border-success-accent !default;
+$ilc-button-outlined-error-border-focus: $ilc-border-error-accent !default;
 $ilc-button-outlined-border-width-sm: $ilc-stroke-sm !default;
 $ilc-button-outlined-border-width-md: $ilc-stroke-sm !default;
-$ilc-button-text-primary-bg-hover: $ilc-background-brand-primary !default;
-$ilc-button-text-primary-bg-focused: $ilc-background-brand-primary !default;
-$ilc-button-text-primary-bg-disabled: $ilc-background-disabled !default;
-$ilc-button-text-primary-fg: $ilc-text-brand !default;
-$ilc-button-text-primary-fg-hover: $ilc-text-brand-hover !default;
-$ilc-button-text-primary-fg-focused: $ilc-text-brand-hover !default;
-$ilc-button-text-primary-fg-disabled: $ilc-text-disabled !default;
-$ilc-button-text-secondary-bg-hover: $ilc-background-tertiary !default;
-$ilc-button-text-secondary-bg-focused: $ilc-background-tertiary !default;
-$ilc-button-text-secondary-bg-disabled: $ilc-background-disabled !default;
-$ilc-button-text-secondary-fg: $ilc-text-primary !default;
-$ilc-button-text-secondary-fg-hover: $ilc-text-primary-hover !default;
-$ilc-button-text-secondary-fg-focused: $ilc-text-primary !default;
-$ilc-button-text-secondary-fg-disabled: $ilc-text-disabled !default;
+$ilc-button-text-brand-bg-hover: $ilc-background-brand-primary !default;
+$ilc-button-text-brand-bg-focus: $ilc-background-brand-primary !default;
+$ilc-button-text-brand-bg-disabled: $ilc-background-disabled !default;
+$ilc-button-text-brand-fg: $ilc-text-brand !default;
+$ilc-button-text-brand-fg-hover: $ilc-text-brand-hover !default;
+$ilc-button-text-brand-fg-focus: $ilc-text-brand-hover !default;
+$ilc-button-text-brand-fg-disabled: $ilc-text-disabled !default;
+$ilc-button-text-gray-bg-hover: $ilc-background-tertiary !default;
+$ilc-button-text-gray-bg-focus: $ilc-background-tertiary !default;
+$ilc-button-text-gray-bg-disabled: $ilc-background-disabled !default;
+$ilc-button-text-gray-fg: $ilc-text-primary !default;
+$ilc-button-text-gray-fg-hover: $ilc-text-primary-hover !default;
+$ilc-button-text-gray-fg-focus: $ilc-text-primary !default;
+$ilc-button-text-gray-fg-disabled: $ilc-text-disabled !default;
 $ilc-button-text-error-bg-hover: $ilc-background-error-primary !default;
 $ilc-button-text-error-bg-disabled: $ilc-background-disabled !default;
 $ilc-button-text-error-fg: $ilc-text-error !default;
 $ilc-button-text-error-fg-hover: $ilc-text-error-hover !default;
 $ilc-button-text-error-fg-disabled: $ilc-text-disabled !default;
-$ilc-button-text-warning-bg-hover: $ilc-background-warning-primary !default;
-$ilc-button-text-warning-bg-disabled: $ilc-background-disabled !default;
-$ilc-button-text-warning-fg: $ilc-text-warning !default;
-$ilc-button-text-warning-fg-hover: $ilc-text-warning-hover !default;
-$ilc-button-text-warning-fg-disabled: $ilc-text-disabled !default;
-$ilc-button-text-success-bg-hover: $ilc-background-success-primary !default;
-$ilc-button-text-success-bg-disabled: $ilc-background-disabled !default;
-$ilc-button-text-success-fg: $ilc-text-success !default;
-$ilc-button-text-success-fg-hover: $ilc-text-success-hover !default;
-$ilc-button-text-success-fg-disabled: $ilc-text-disabled !default;
 $ilc-button-radius-xs: $ilc-raduis-xs !default;
 $ilc-button-radius-sm: $ilc-raduis-sm !default;
 $ilc-button-radius-md: $ilc-raduis-sm !default;
@@ -1242,135 +1199,86 @@ $tokens: (
     '3s': $ilc-width-3s
   ),
   'button': (
-    'filled': (
-      'primary': (
-        'bg': $ilc-button-filled-primary-bg,
-        'bg-hover': $ilc-button-filled-primary-bg-hover,
-        'bg-disabled': $ilc-button-filled-primary-bg-disabled,
-        'fg': $ilc-button-filled-primary-fg,
-        'fg-hover': $ilc-button-filled-primary-fg-hover,
-        'fg-disabled': $ilc-button-filled-primary-fg-disabled
-      ),
-      'secondary': (
-        'bg': $ilc-button-filled-secondary-bg,
-        'bg-hover': $ilc-button-filled-secondary-bg-hover,
-        'bg-disabled': $ilc-button-filled-secondary-bg-disabled,
-        'fg': $ilc-button-filled-secondary-fg,
-        'fg-hover': $ilc-button-filled-secondary-fg-hover,
-        'fg-disabled': $ilc-button-filled-secondary-fg-disabled
+    'primary': (
+      'brand': (
+        'bg': $ilc-button-primary-brand-bg,
+        'bg-hover': $ilc-button-primary-brand-bg-hover,
+        'bg-active': $ilc-button-primary-brand-bg-active,
+        'bg-disabled': $ilc-button-primary-brand-bg-disabled,
+        'fg': $ilc-button-primary-brand-fg,
+        'fg-hover': $ilc-button-primary-brand-fg-hover,
+        'fg-focus': $ilc-button-primary-brand-fg-focus,
+        'fg-disabled': $ilc-button-primary-brand-fg-disabled
       ),
       'error': (
-        'bg': $ilc-button-filled-error-bg,
-        'bg-hover': $ilc-button-filled-error-bg-hover,
-        'bg-disabled': $ilc-button-filled-error-bg-disabled,
-        'fg': $ilc-button-filled-error-fg,
-        'fg-hover': $ilc-button-filled-error-fg-hover,
-        'fg-disabled': $ilc-button-filled-error-fg-disabled
-      ),
-      'warning': (
-        'bg': $ilc-button-filled-warning-bg,
-        'bg-hover': $ilc-button-filled-warning-bg-hover,
-        'bg-disabled': $ilc-button-filled-warning-bg-disabled,
-        'fg': $ilc-button-filled-warning-fg,
-        'fg-hover': $ilc-button-filled-warning-fg-hover,
-        'fg-disabled': $ilc-button-filled-warning-fg-disabled
-      ),
-      'success': (
-        'bg': $ilc-button-filled-success-bg,
-        'bg-hover': $ilc-button-filled-success-bg-hover,
-        'bg-disabled': $ilc-button-filled-success-bg-disabled,
-        'fg': $ilc-button-filled-success-fg,
-        'fg-hover': $ilc-button-filled-success-fg-hover,
-        'fg-disabled': $ilc-button-filled-success-fg-disabled
+        'bg': $ilc-button-primary-error-bg,
+        'bg-hover': $ilc-button-primary-error-bg-hover,
+        'bg-focus': $ilc-button-primary-error-bg-focus,
+        'bg-disabled': $ilc-button-primary-error-bg-disabled,
+        'fg': $ilc-button-primary-error-fg,
+        'fg-hover': $ilc-button-primary-error-fg-hover,
+        'fg-focus': $ilc-button-primary-error-fg-focus,
+        'fg-disabled': $ilc-button-primary-error-fg-disabled
       )
     ),
-    'subtle': (
-      'primary': (
-        'bg': $ilc-button-subtle-primary-bg,
-        'bg-hover': $ilc-button-subtle-primary-bg-hover,
-        'bg-disabled': $ilc-button-subtle-primary-bg-disabled,
-        'fg': $ilc-button-subtle-primary-fg,
-        'fg-hover': $ilc-button-subtle-primary-fg-hover,
-        'fg-disabled': $ilc-button-subtle-primary-fg-disabled
-      ),
-      'secondary': (
-        'bg': $ilc-button-subtle-secondary-bg,
-        'bg-hover': $ilc-button-subtle-secondary-bg-hover,
-        'bg-disabled': $ilc-button-subtle-secondary-bg-disabled,
-        'fg': $ilc-button-subtle-secondary-fg,
-        'fg-hover': $ilc-button-subtle-secondary-fg-hover,
-        'fg-disabled': $ilc-button-subtle-secondary-fg-disabled
+    'secondary': (
+      'gray': (
+        'bg': $ilc-button-secondary-gray-bg,
+        'bg-hover': $ilc-button-secondary-gray-bg-hover,
+        'bg-focus': $ilc-button-secondary-gray-bg-focus,
+        'bg-disabled': $ilc-button-secondary-gray-bg-disabled,
+        'fg': $ilc-button-secondary-gray-fg,
+        'fg-hover': $ilc-button-secondary-gray-fg-hover,
+        'fg-focus': $ilc-button-secondary-gray-fg-focus,
+        'fg-disabled': $ilc-button-secondary-gray-fg-disabled
       ),
       'error': (
-        'bg': $ilc-button-subtle-error-bg,
-        'bg-hover': $ilc-button-subtle-error-bg-hover,
-        'bg-disabled': $ilc-button-subtle-error-bg-disabled,
-        'fg': $ilc-button-subtle-error-fg,
-        'fg-hover': $ilc-button-subtle-error-fg-hover,
-        'fg-disabled': $ilc-button-subtle-error-fg-disabled
-      ),
-      'warning': (
-        'bg': $ilc-button-subtle-warning-bg,
-        'bg-hover': $ilc-button-subtle-warning-bg-hover,
-        'bg-disabled': $ilc-button-subtle-warning-bg-disabled,
-        'fg': $ilc-button-subtle-warning-fg,
-        'fg-hover': $ilc-button-subtle-warning-fg-hover,
-        'fg-disabled': $ilc-button-subtle-warning-fg-disabled
-      ),
-      'success': (
-        'bg': $ilc-button-subtle-success-bg,
-        'bg-hover': $ilc-button-subtle-success-bg-hover,
-        'bg-disabled': $ilc-button-subtle-success-bg-disabled,
-        'fg': $ilc-button-subtle-success-fg,
-        'fg-hover': $ilc-button-subtle-success-fg-hover,
-        'fg-disabled': $ilc-button-subtle-success-fg-disabled
+        'bg': $ilc-button-secondary-error-bg,
+        'bg-hover': $ilc-button-secondary-error-bg-hover,
+        'bg-focus': $ilc-button-secondary-error-bg-focus,
+        'bg-disabled': $ilc-button-secondary-error-bg-disabled,
+        'fg': $ilc-button-secondary-error-fg,
+        'fg-hover': $ilc-button-secondary-error-fg-hover,
+        'fg-focus': $ilc-button-secondary-error-fg-focus,
+        'fg-disabled': $ilc-button-secondary-error-fg-disabled
       )
     ),
     'outlined': (
-      'primary': (
-        'bg-hover': $ilc-button-outlined-primary-bg-hover,
-        'fg': $ilc-button-outlined-primary-fg,
-        'fg-hover': $ilc-button-outlined-primary-fg-hover,
-        'fg-disabled': $ilc-button-outlined-primary-fg-disabled,
-        'border': $ilc-button-outlined-primary-border,
-        'border-hover': $ilc-button-outlined-primary-border-hover,
-        'bg-disabled': $ilc-button-outlined-primary-bg-disabled
+      'brand': (
+        'bg-hover': $ilc-button-outlined-brand-bg-hover,
+        'bg-focus': $ilc-button-outlined-brand-bg-focus,
+        'bg-disabled': $ilc-button-outlined-brand-bg-disabled,
+        'fg': $ilc-button-outlined-brand-fg,
+        'fg-hover': $ilc-button-outlined-brand-fg-hover,
+        'fg-focus': $ilc-button-outlined-brand-fg-focus,
+        'fg-disabled': $ilc-button-outlined-brand-fg-disabled,
+        'border': $ilc-button-outlined-brand-border,
+        'border-hover': $ilc-button-outlined-brand-border-hover,
+        'border-focus': $ilc-button-outlined-brand-border-focus
       ),
-      'secondary': (
-        'bg-hover': $ilc-button-outlined-secondary-bg-hover,
-        'bg-disabled': $ilc-button-outlined-secondary-bg-disabled,
-        'fg': $ilc-button-outlined-secondary-fg,
-        'fg-hover': $ilc-button-outlined-secondary-fg-hover,
-        'fg-disabled': $ilc-button-outlined-secondary-fg-disabled,
-        'border': $ilc-button-outlined-secondary-border,
-        'border-hover': $ilc-button-outlined-secondary-border-hover
+      'gray': (
+        'bg-hover': $ilc-button-outlined-gray-bg-hover,
+        'bg-focus': $ilc-button-outlined-gray-bg-focus,
+        'bg-disabled': $ilc-button-outlined-gray-bg-disabled,
+        'fg': $ilc-button-outlined-gray-fg,
+        'fg-hover': $ilc-button-outlined-gray-fg-hover,
+        'fg-focus': $ilc-button-outlined-gray-fg-focus,
+        'fg-disabled': $ilc-button-outlined-gray-fg-disabled,
+        'border': $ilc-button-outlined-gray-border,
+        'border-hover': $ilc-button-outlined-gray-border-hover,
+        'border-focus': $ilc-button-outlined-gray-border-focus
       ),
       'error': (
         'bg-hover': $ilc-button-outlined-error-bg-hover,
+        'bg-focus': $ilc-button-outlined-error-bg-focus,
         'bg-disabled': $ilc-button-outlined-error-bg-disabled,
         'fg': $ilc-button-outlined-error-fg,
         'fg-hover': $ilc-button-outlined-error-fg-hover,
+        'fg-focus': $ilc-button-outlined-error-fg-focus,
         'fg-disabled': $ilc-button-outlined-error-fg-disabled,
         'border': $ilc-button-outlined-error-border,
-        'border-hover': $ilc-button-outlined-error-border-hover
-      ),
-      'warning': (
-        'bg-hover': $ilc-button-outlined-warning-bg-hover,
-        'bg-disabled': $ilc-button-outlined-warning-bg-disabled,
-        'fg': $ilc-button-outlined-warning-fg,
-        'fg-hover': $ilc-button-outlined-warning-fg-hover,
-        'fg-disabled': $ilc-button-outlined-warning-fg-disabled,
-        'border': $ilc-button-outlined-warning-border,
-        'border-hover': $ilc-button-outlined-warning-border-hover
-      ),
-      'success': (
-        'bg-hover': $ilc-button-outlined-success-bg-hover,
-        'bg-disabled': $ilc-button-outlined-success-bg-disabled,
-        'fg': $ilc-button-outlined-success-fg,
-        'fg-hover': $ilc-button-outlined-success-fg-hover,
-        'fg-disabled': $ilc-button-outlined-success-fg-disabled,
-        'border': $ilc-button-outlined-success-border,
-        'border-hover': $ilc-button-outlined-success-border-hover
+        'border-hover': $ilc-button-outlined-error-border-hover,
+        'border-focus': $ilc-button-outlined-error-border-focus
       ),
       'border-width': (
         'sm': $ilc-button-outlined-border-width-sm,
@@ -1378,23 +1286,23 @@ $tokens: (
       )
     ),
     'text': (
-      'primary': (
-        'bg-hover': $ilc-button-text-primary-bg-hover,
-        'bg-focused': $ilc-button-text-primary-bg-focused,
-        'bg-disabled': $ilc-button-text-primary-bg-disabled,
-        'fg': $ilc-button-text-primary-fg,
-        'fg-hover': $ilc-button-text-primary-fg-hover,
-        'fg-focused': $ilc-button-text-primary-fg-focused,
-        'fg-disabled': $ilc-button-text-primary-fg-disabled
+      'brand': (
+        'bg-hover': $ilc-button-text-brand-bg-hover,
+        'bg-focus': $ilc-button-text-brand-bg-focus,
+        'bg-disabled': $ilc-button-text-brand-bg-disabled,
+        'fg': $ilc-button-text-brand-fg,
+        'fg-hover': $ilc-button-text-brand-fg-hover,
+        'fg-focus': $ilc-button-text-brand-fg-focus,
+        'fg-disabled': $ilc-button-text-brand-fg-disabled
       ),
-      'secondary': (
-        'bg-hover': $ilc-button-text-secondary-bg-hover,
-        'bg-focused': $ilc-button-text-secondary-bg-focused,
-        'bg-disabled': $ilc-button-text-secondary-bg-disabled,
-        'fg': $ilc-button-text-secondary-fg,
-        'fg-hover': $ilc-button-text-secondary-fg-hover,
-        'fg-focused': $ilc-button-text-secondary-fg-focused,
-        'fg-disabled': $ilc-button-text-secondary-fg-disabled
+      'gray': (
+        'bg-hover': $ilc-button-text-gray-bg-hover,
+        'bg-focus': $ilc-button-text-gray-bg-focus,
+        'bg-disabled': $ilc-button-text-gray-bg-disabled,
+        'fg': $ilc-button-text-gray-fg,
+        'fg-hover': $ilc-button-text-gray-fg-hover,
+        'fg-focus': $ilc-button-text-gray-fg-focus,
+        'fg-disabled': $ilc-button-text-gray-fg-disabled
       ),
       'error': (
         'bg-hover': $ilc-button-text-error-bg-hover,
@@ -1402,20 +1310,6 @@ $tokens: (
         'fg': $ilc-button-text-error-fg,
         'fg-hover': $ilc-button-text-error-fg-hover,
         'fg-disabled': $ilc-button-text-error-fg-disabled
-      ),
-      'warning': (
-        'bg-hover': $ilc-button-text-warning-bg-hover,
-        'bg-disabled': $ilc-button-text-warning-bg-disabled,
-        'fg': $ilc-button-text-warning-fg,
-        'fg-hover': $ilc-button-text-warning-fg-hover,
-        'fg-disabled': $ilc-button-text-warning-fg-disabled
-      ),
-      'success': (
-        'bg-hover': $ilc-button-text-success-bg-hover,
-        'bg-disabled': $ilc-button-text-success-bg-disabled,
-        'fg': $ilc-button-text-success-fg,
-        'fg-hover': $ilc-button-text-success-fg-hover,
-        'fg-disabled': $ilc-button-text-success-fg-disabled
       )
     ),
     'radius': (
