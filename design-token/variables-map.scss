@@ -583,25 +583,24 @@ $ilc-button-spacing-sm-padding-x: $ilc-padding-3 !default;
 $ilc-button-spacing-sm-gap: $ilc-gap-2px !default;
 $ilc-button-spacing-md-padding-x: $ilc-padding-3 !default;
 $ilc-button-spacing-md-gap: $ilc-gap-2px !default;
-$ilc-input-default-label-text: $ilc-text-primary !default;
+$ilc-input-label-text: $ilc-text-primary !default;
 $ilc-input-default-description-text: $ilc-text-secondary !default;
 $ilc-input-default-input-text: $ilc-text-black !default;
-$ilc-input-default-placeholder-text: $ilc-text-disabled !default;
-$ilc-input-default-input-border-focused: $ilc-border-brand !default;
-$ilc-input-default-input-text-disbled: $ilc-text-disabled !default;
-$ilc-input-default-input-bg-disbled: $ilc-background-disabled !default;
-$ilc-input-default-input-border-disabled: $ilc-border-disabled !default;
+$ilc-input-default-input-fg: $ilc-border-brand !default;
 $ilc-input-default-input-border: $ilc-border-primary !default;
 $ilc-input-default-input-border-hover: $ilc-border-primary-hover !default;
-$ilc-input-default-input-fg: $ilc-border-brand !default;
-$ilc-input-default-label-attention: $ilc-text-warning !default;
-$ilc-input-error-label-text: $ilc-text-primary !default;
+$ilc-input-default-input-border-focused: $ilc-border-brand !default;
+$ilc-input-default-input-border-disabled: $ilc-border-disabled !default;
+$ilc-input-label-required: $ilc-text-warning !default;
+$ilc-input-placeholder-text: $ilc-text-disabled !default;
+$ilc-input-input-text-disbled: $ilc-text-disabled !default;
+$ilc-input-input-bg-disbled: $ilc-background-disabled !default;
 $ilc-input-error-description-text: $ilc-text-error-hover !default;
 $ilc-input-error-input-text: $ilc-text-error !default;
-$ilc-input-error-placeholder-text: $ilc-text-disabled !default;
-$ilc-input-error-input-border-focused: $ilc-border-error-accent !default;
 $ilc-input-error-input-fg: $ilc-text-error !default;
-$ilc-input-error-label-attention: $ilc-text-warning !default;
+$ilc-input-error-input-border: $ilc-border-error !default;
+$ilc-input-error-input-border-hover: $ilc-border-error-accent !default;
+$ilc-input-error-input-border-focused: $ilc-border-primary !default;
 $ilc-dialog-bg: $ilc-background-primary !default;
 $ilc-dialog-title: $ilc-text-primary !default;
 $ilc-dialog-body: $ilc-text-primary !default;
@@ -1348,28 +1347,27 @@ $tokens: (
     )
   ),
   'input': (
+    'label-text': $ilc-input-label-text,
     'default': (
-      'label-text': $ilc-input-default-label-text,
       'description-text': $ilc-input-default-description-text,
       'input-text': $ilc-input-default-input-text,
-      'placeholder-text': $ilc-input-default-placeholder-text,
-      'input-border-focused': $ilc-input-default-input-border-focused,
-      'input-text-disbled': $ilc-input-default-input-text-disbled,
-      'input-bg-disbled': $ilc-input-default-input-bg-disbled,
-      'input-border-disabled': $ilc-input-default-input-border-disabled,
+      'input-fg': $ilc-input-default-input-fg,
       'input-border': $ilc-input-default-input-border,
       'input-border-hover': $ilc-input-default-input-border-hover,
-      'input-fg': $ilc-input-default-input-fg,
-      'label-attention': $ilc-input-default-label-attention
+      'input-border-focused': $ilc-input-default-input-border-focused,
+      'input-border-disabled': $ilc-input-default-input-border-disabled
     ),
+    'label-required': $ilc-input-label-required,
+    'placeholder-text': $ilc-input-placeholder-text,
+    'input-text-disbled': $ilc-input-input-text-disbled,
+    'input-bg-disbled': $ilc-input-input-bg-disbled,
     'error': (
-      'label-text': $ilc-input-error-label-text,
       'description-text': $ilc-input-error-description-text,
       'input-text': $ilc-input-error-input-text,
-      'placeholder-text': $ilc-input-error-placeholder-text,
-      'input-border-focused': $ilc-input-error-input-border-focused,
       'input-fg': $ilc-input-error-input-fg,
-      'label-attention': $ilc-input-error-label-attention
+      'input-border': $ilc-input-error-input-border,
+      'input-border-hover': $ilc-input-error-input-border-hover,
+      'input-border-focused': $ilc-input-error-input-border-focused
     )
   ),
   'dialog': (
