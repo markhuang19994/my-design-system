@@ -600,7 +600,7 @@
   --ilc-input-error-input-fg: var(--ilc-text-error, #d92d20);
   --ilc-input-error-input-border: var(--ilc-border-error, #f04438);
   --ilc-input-error-input-border-hover: var(--ilc-border-error, #f04438);
-  --ilc-input-error-input-border-focused: var(--ilc-border-primary, #d5d7da);
+  --ilc-input-error-input-border-focused: var(--ilc-border-brand, #0086c9);
   --ilc-dialog-bg: var(--ilc-background-primary, #ffffff);
   --ilc-dialog-title: var(--ilc-text-primary, #252b37);
   --ilc-dialog-body: var(--ilc-text-primary, #252b37);
