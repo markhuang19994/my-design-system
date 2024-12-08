@@ -243,7 +243,7 @@
   --ilc-caption-sm-uppercase: var(--ilc-font-weights-regular, 4var(--ilc-paragraph-spacing-0, 0)0) var(--ilc-font-size-sm, 14px)/var(--ilc-line-heights-sm, 22) var(--ilc-font-families-sans-serif, 'Noto Sans TC');
   --ilc-caption-xs: var(--ilc-font-weights-regular, 4var(--ilc-paragraph-spacing-0, 0)0) var(--ilc-font-size-xs, 12px)/var(--ilc-line-heights-xs, 18) var(--ilc-font-families-sans-serif, 'Noto Sans TC');
   --ilc-background-primary: var(--ilc-colors-base-white, #ffffff);
-  --ilc-background-primary-hover: var(--ilc-colors-dark-1, #f5f5f6);
+  --ilc-background-primary-hover: var(--ilc-colors-dark-0, #fafafa);
   --ilc-background-secondary: var(--ilc-colors-dark-1, #f5f5f6);
   --ilc-background-secondary-hover: var(--ilc-colors-dark-2, #f0f1f1);
   --ilc-background-secondary-solid: var(--ilc-colors-dark-6, #85888e);
@@ -789,7 +789,7 @@
   --ilc-table-header-cell-bg: var(--ilc-background-tertiary, #fafafa);
   --ilc-table-header-cell-text: var(--ilc-text-tertiary, #85888e);
   --ilc-table-cell-bg: var(--ilc-background-primary, #ffffff);
-  --ilc-table-cell-bg-hover: var(--ilc-background-primary-hover, #f5f5f6);
+  --ilc-table-cell-bg-hover: var(--ilc-background-primary-hover, #fafafa);
   --ilc-table-cell-text: var(--ilc-text-primary, #333741);
   --ilc-table-cell-supporting-text: var(--ilc-text-quaternary, #94969c);
   --ilc-table-cell-border: var(--ilc-border-secondary, #f0f1f1);
