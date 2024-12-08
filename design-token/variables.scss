@@ -488,14 +488,14 @@ $ilc-margin-20: $ilc-spacing-80 !default;
 $ilc-margin-2px: $ilc-spacing-2 !default;
 $ilc-margin-1s: $ilc-spacing-6 !default;
 $ilc-margin-2s: $ilc-spacing-10 !default;
-$ilc-raduis-2xs: $ilc-spacing-2 !default;
-$ilc-raduis-xs: $ilc-spacing-4 !default;
-$ilc-raduis-sm: $ilc-spacing-6 !default;
-$ilc-raduis-md: $ilc-spacing-8 !default;
-$ilc-raduis-lg: $ilc-spacing-10 !default;
-$ilc-raduis-xl: $ilc-spacing-16 !default;
-$ilc-raduis-2xl: $ilc-spacing-20 !default;
-$ilc-raduis-full: $ilc-spacing-full !default;
+$ilc-radius-2xs: $ilc-spacing-2 !default;
+$ilc-radius-xs: $ilc-spacing-4 !default;
+$ilc-radius-sm: $ilc-spacing-6 !default;
+$ilc-radius-md: $ilc-spacing-8 !default;
+$ilc-radius-lg: $ilc-spacing-10 !default;
+$ilc-radius-xl: $ilc-spacing-16 !default;
+$ilc-radius-2xl: $ilc-spacing-20 !default;
+$ilc-radius-full: $ilc-spacing-full !default;
 $ilc-gap-1: $ilc-spacing-4 !default;
 $ilc-gap-2: $ilc-spacing-8 !default;
 $ilc-gap-3: $ilc-spacing-12 !default;
@@ -667,10 +667,10 @@ $ilc-button-text-error-bg-disabled: $ilc-background-disabled !default;
 $ilc-button-text-error-fg: $ilc-text-error !default;
 $ilc-button-text-error-fg-hover: $ilc-text-error-hover !default;
 $ilc-button-text-error-fg-disabled: $ilc-text-disabled !default;
-$ilc-button-radius-xs: $ilc-raduis-xs !default;
-$ilc-button-radius-sm: $ilc-raduis-sm !default;
-$ilc-button-radius-md: $ilc-raduis-sm !default;
-$ilc-button-radius-lg: $ilc-raduis-sm !default;
+$ilc-button-radius-xs: $ilc-radius-xs !default;
+$ilc-button-radius-sm: $ilc-radius-sm !default;
+$ilc-button-radius-md: $ilc-radius-sm !default;
+$ilc-button-radius-lg: $ilc-radius-sm !default;
 $ilc-button-sizing-sm-width: $ilc-width-9 !default;
 $ilc-button-sizing-sm-height: $ilc-height-9 !default;
 $ilc-button-sizing-md-width: $ilc-width-10 !default;
@@ -707,7 +707,7 @@ $ilc-dialog-body: $ilc-text-primary !default;
 $ilc-dialog-fg-success: $ilc-foreground-success !default;
 $ilc-dialog-fg-warning: $ilc-foreground-warning !default;
 $ilc-dialog-fg-error: $ilc-foreground-error !default;
-$ilc-dialog-radius: $ilc-raduis-md !default;
+$ilc-dialog-radius: $ilc-radius-md !default;
 $ilc-dialog-padding-x: $ilc-padding-4 !default;
 $ilc-dialog-padding-top: $ilc-padding-5 !default;
 $ilc-dialog-padding-bottom: $ilc-padding-4 !default;
@@ -726,6 +726,66 @@ $ilc-section-item-active-text-hover: $ilc-text-brand-hover !default;
 $ilc-section-item-active-text-focused: $ilc-text-brand !default;
 $ilc-section-item-active-text-disabled: $ilc-text-disabled !default;
 $ilc-section-bg: $ilc-background-tertiary !default;
+$ilc-tabs-button-filled-buttons-gap: $ilc-gap-1 !default;
+$ilc-tabs-button-filled-radius-sm: $ilc-radius-sm !default;
+$ilc-tabs-button-filled-radius-md: $ilc-radius-sm !default;
+$ilc-tabs-button-filled-spacing-sm-padding-x: $ilc-padding-3 !default;
+$ilc-tabs-button-filled-spacing-sm-padding-y: $ilc-padding-2 !default;
+$ilc-tabs-button-filled-spacing-sm-gap: $ilc-gap-2 !default;
+$ilc-tabs-button-filled-spacing-md-padding-x: $ilc-padding-3 !default;
+$ilc-tabs-button-filled-spacing-md-padding-y: $ilc-padding-2 !default;
+$ilc-tabs-button-filled-spacing-md-gap: $ilc-gap-2 !default;
+$ilc-tabs-button-filled-brand-default-text: $ilc-text-secondary !default;
+$ilc-tabs-button-filled-brand-default-text-hover: $ilc-text-brand !default;
+$ilc-tabs-button-filled-brand-default-text-focus: $ilc-text-secondary !default;
+$ilc-tabs-button-filled-brand-default-bg-hover: $ilc-background-brand-primary !default;
+$ilc-tabs-button-filled-brand-default-bg-focus: $ilc-background-primary !default;
+$ilc-tabs-button-filled-brand-selected-text: $ilc-text-brand !default;
+$ilc-tabs-button-filled-brand-selected-text-hover: $ilc-text-brand !default;
+$ilc-tabs-button-filled-brand-selected-text-focus: $ilc-text-brand !default;
+$ilc-tabs-button-filled-brand-selected-bg: $ilc-background-brand-primary !default;
+$ilc-tabs-button-filled-brand-selected-bg-hover: $ilc-background-brand-primary-hover !default;
+$ilc-tabs-button-filled-brand-selected-bg-focus: $ilc-background-brand-primary !default;
+$ilc-tabs-button-filled-gray-default-text: $ilc-text-secondary !default;
+$ilc-tabs-button-filled-gray-default-text-hover: $ilc-text-secondary-hover !default;
+$ilc-tabs-button-filled-gray-default-text-focus: $ilc-text-secondary !default;
+$ilc-tabs-button-filled-gray-default-bg-hover: $ilc-background-tertiary !default;
+$ilc-tabs-button-filled-gray-default-bg-focus: $ilc-background-primary !default;
+$ilc-tabs-button-filled-gray-selected-text: $ilc-text-primary !default;
+$ilc-tabs-button-filled-gray-selected-text-hover: $ilc-text-primary !default;
+$ilc-tabs-button-filled-gray-selected-text-focus: $ilc-text-primary !default;
+$ilc-tabs-button-filled-gray-selected-bg: $ilc-background-tertiary !default;
+$ilc-tabs-button-filled-gray-selected-bg-hover: $ilc-background-tertiary-hover !default;
+$ilc-tabs-button-filled-gray-selected-bg-focus: $ilc-background-tertiary !default;
+$ilc-tabs-button-outlined-buttons-gap: $ilc-gap-2px !default;
+$ilc-tabs-button-outlined-buttons-radius: $ilc-radius-sm !default;
+$ilc-tabs-button-outlined-bg: $ilc-background-secondary !default;
+$ilc-tabs-button-outlined-border: $ilc-border-secondary !default;
+$ilc-tabs-button-outlined-border-stroke: $ilc-stroke-sm !default;
+$ilc-tabs-button-outlined-radius-sm: $ilc-radius-sm !default;
+$ilc-tabs-button-outlined-radius-md: $ilc-radius-sm !default;
+$ilc-tabs-button-outlined-spacing-sm-padding-x: $ilc-padding-3 !default;
+$ilc-tabs-button-outlined-spacing-sm-padding-y: $ilc-padding-2 !default;
+$ilc-tabs-button-outlined-spacing-sm-gap: $ilc-gap-2 !default;
+$ilc-tabs-button-outlined-spacing-md-padding-x: $ilc-padding-3 !default;
+$ilc-tabs-button-outlined-spacing-md-padding-y: $ilc-padding-2 !default;
+$ilc-tabs-button-outlined-spacing-md-gap: $ilc-gap-2 !default;
+$ilc-tabs-button-outlined-gray-default-text: $ilc-text-secondary !default;
+$ilc-tabs-button-outlined-gray-default-text-hover: $ilc-text-secondary-hover !default;
+$ilc-tabs-button-outlined-gray-default-text-focus: $ilc-text-secondary !default;
+$ilc-tabs-button-outlined-gray-default-bg-focus: $ilc-background-primary !default;
+$ilc-tabs-button-outlined-gray-default-border-focus: $ilc-border-primary !default;
+$ilc-tabs-button-outlined-gray-default-border-stroke: $ilc-stroke-sm !default;
+$ilc-tabs-button-outlined-gray-selected-text: $ilc-text-primary !default;
+$ilc-tabs-button-outlined-gray-selected-text-hover: $ilc-text-primary !default;
+$ilc-tabs-button-outlined-gray-selected-text-focus: $ilc-text-primary !default;
+$ilc-tabs-button-outlined-gray-selected-bg: $ilc-background-primary !default;
+$ilc-tabs-button-outlined-gray-selected-bg-hover: $ilc-background-primary !default;
+$ilc-tabs-button-outlined-gray-selected-bg-focus: $ilc-background-primary !default;
+$ilc-tabs-button-outlined-gray-selected-border: $ilc-border-primary !default;
+$ilc-tabs-button-outlined-gray-selected-border-hover: $ilc-border-primary-hover !default;
+$ilc-tabs-button-outlined-gray-selected-border-focus: $ilc-border-primary !default;
+$ilc-tabs-button-outlined-gray-selected-border-stroke: $ilc-stroke-sm !default;
 
 $tokens: (
   'colors': (
@@ -1313,15 +1373,15 @@ $tokens: (
     '1s': $ilc-margin-1s,
     '2s': $ilc-margin-2s
   ),
-  'raduis': (
-    '2xs': $ilc-raduis-2xs,
-    'xs': $ilc-raduis-xs,
-    'sm': $ilc-raduis-sm,
-    'md': $ilc-raduis-md,
-    'lg': $ilc-raduis-lg,
-    'xl': $ilc-raduis-xl,
-    '2xl': $ilc-raduis-2xl,
-    'full': $ilc-raduis-full
+  'radius': (
+    '2xs': $ilc-radius-2xs,
+    'xs': $ilc-radius-xs,
+    'sm': $ilc-radius-sm,
+    'md': $ilc-radius-md,
+    'lg': $ilc-radius-lg,
+    'xl': $ilc-radius-xl,
+    '2xl': $ilc-radius-2xl,
+    'full': $ilc-radius-full
   ),
   'gap': (
     '1': $ilc-gap-1,
@@ -1626,6 +1686,106 @@ $tokens: (
       )
     ),
     'bg': $ilc-section-bg
+  ),
+  'tabs': (
+    'button-filled': (
+      'buttons-gap': $ilc-tabs-button-filled-buttons-gap,
+      'radius': (
+        'sm': $ilc-tabs-button-filled-radius-sm,
+        'md': $ilc-tabs-button-filled-radius-md
+      ),
+      'spacing': (
+        'sm': (
+          'padding-x': $ilc-tabs-button-filled-spacing-sm-padding-x,
+          'padding-y': $ilc-tabs-button-filled-spacing-sm-padding-y,
+          'gap': $ilc-tabs-button-filled-spacing-sm-gap
+        ),
+        'md': (
+          'padding-x': $ilc-tabs-button-filled-spacing-md-padding-x,
+          'padding-y': $ilc-tabs-button-filled-spacing-md-padding-y,
+          'gap': $ilc-tabs-button-filled-spacing-md-gap
+        )
+      ),
+      'brand': (
+        'default': (
+          'text': $ilc-tabs-button-filled-brand-default-text,
+          'text-hover': $ilc-tabs-button-filled-brand-default-text-hover,
+          'text-focus': $ilc-tabs-button-filled-brand-default-text-focus,
+          'bg-hover': $ilc-tabs-button-filled-brand-default-bg-hover,
+          'bg-focus': $ilc-tabs-button-filled-brand-default-bg-focus
+        ),
+        'selected': (
+          'text': $ilc-tabs-button-filled-brand-selected-text,
+          'text-hover': $ilc-tabs-button-filled-brand-selected-text-hover,
+          'text-focus': $ilc-tabs-button-filled-brand-selected-text-focus,
+          'bg': $ilc-tabs-button-filled-brand-selected-bg,
+          'bg-hover': $ilc-tabs-button-filled-brand-selected-bg-hover,
+          'bg-focus': $ilc-tabs-button-filled-brand-selected-bg-focus
+        )
+      ),
+      'gray': (
+        'default': (
+          'text': $ilc-tabs-button-filled-gray-default-text,
+          'text-hover': $ilc-tabs-button-filled-gray-default-text-hover,
+          'text-focus': $ilc-tabs-button-filled-gray-default-text-focus,
+          'bg-hover': $ilc-tabs-button-filled-gray-default-bg-hover,
+          'bg-focus': $ilc-tabs-button-filled-gray-default-bg-focus
+        ),
+        'selected': (
+          'text': $ilc-tabs-button-filled-gray-selected-text,
+          'text-hover': $ilc-tabs-button-filled-gray-selected-text-hover,
+          'text-focus': $ilc-tabs-button-filled-gray-selected-text-focus,
+          'bg': $ilc-tabs-button-filled-gray-selected-bg,
+          'bg-hover': $ilc-tabs-button-filled-gray-selected-bg-hover,
+          'bg-focus': $ilc-tabs-button-filled-gray-selected-bg-focus
+        )
+      )
+    ),
+    'button-outlined': (
+      'buttons-gap': $ilc-tabs-button-outlined-buttons-gap,
+      'buttons-radius': $ilc-tabs-button-outlined-buttons-radius,
+      'bg': $ilc-tabs-button-outlined-bg,
+      'border': $ilc-tabs-button-outlined-border,
+      'border-stroke': $ilc-tabs-button-outlined-border-stroke,
+      'radius': (
+        'sm': $ilc-tabs-button-outlined-radius-sm,
+        'md': $ilc-tabs-button-outlined-radius-md
+      ),
+      'spacing': (
+        'sm': (
+          'padding-x': $ilc-tabs-button-outlined-spacing-sm-padding-x,
+          'padding-y': $ilc-tabs-button-outlined-spacing-sm-padding-y,
+          'gap': $ilc-tabs-button-outlined-spacing-sm-gap
+        ),
+        'md': (
+          'padding-x': $ilc-tabs-button-outlined-spacing-md-padding-x,
+          'padding-y': $ilc-tabs-button-outlined-spacing-md-padding-y,
+          'gap': $ilc-tabs-button-outlined-spacing-md-gap
+        )
+      ),
+      'gray': (
+        'default': (
+          'text': $ilc-tabs-button-outlined-gray-default-text,
+          'text-hover': $ilc-tabs-button-outlined-gray-default-text-hover,
+          'text-focus': $ilc-tabs-button-outlined-gray-default-text-focus,
+          'bg-focus': $ilc-tabs-button-outlined-gray-default-bg-focus,
+          'border-focus': $ilc-tabs-button-outlined-gray-default-border-focus,
+          'border-stroke': $ilc-tabs-button-outlined-gray-default-border-stroke
+        ),
+        'selected': (
+          'text': $ilc-tabs-button-outlined-gray-selected-text,
+          'text-hover': $ilc-tabs-button-outlined-gray-selected-text-hover,
+          'text-focus': $ilc-tabs-button-outlined-gray-selected-text-focus,
+          'bg': $ilc-tabs-button-outlined-gray-selected-bg,
+          'bg-hover': $ilc-tabs-button-outlined-gray-selected-bg-hover,
+          'bg-focus': $ilc-tabs-button-outlined-gray-selected-bg-focus,
+          'border': $ilc-tabs-button-outlined-gray-selected-border,
+          'border-hover': $ilc-tabs-button-outlined-gray-selected-border-hover,
+          'border-focus': $ilc-tabs-button-outlined-gray-selected-border-focus,
+          'border-stroke': $ilc-tabs-button-outlined-gray-selected-border-stroke
+        )
+      )
+    )
   ),
   'tokenSetOrder': (
     '0': 'foundation/colors',
