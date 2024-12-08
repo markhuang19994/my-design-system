@@ -629,9 +629,9 @@
   --ilc-button-outlined-gray-bg-hover: var(--ilc-background-tertiary, #fafafa);
   --ilc-button-outlined-gray-bg-focus: var(--ilc-background-tertiary, #fafafa);
   --ilc-button-outlined-gray-bg-disabled: var(--ilc-background-disabled, #f0f1f1);
-  --ilc-button-outlined-gray-fg: var(--ilc-text-primary, #333741);
-  --ilc-button-outlined-gray-fg-hover: var(--ilc-text-primary-hover, #101828);
-  --ilc-button-outlined-gray-fg-focus: var(--ilc-text-primary, #333741);
+  --ilc-button-outlined-gray-fg: var(--ilc-text-tertiary, #85888e);
+  --ilc-button-outlined-gray-fg-hover: var(--ilc-text-tertiary-hover, #61646c);
+  --ilc-button-outlined-gray-fg-focus: var(--ilc-text-tertiary, #85888e);
   --ilc-button-outlined-gray-fg-disabled: var(--ilc-text-disabled, #94969c);
   --ilc-button-outlined-gray-border: var(--ilc-border-neutral-accent, #85888e);
   --ilc-button-outlined-gray-border-hover: var(--ilc-border-neutral-accent, #85888e);
