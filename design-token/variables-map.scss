@@ -786,6 +786,38 @@ $ilc-tabs-button-outlined-gray-selected-border: $ilc-border-primary !default;
 $ilc-tabs-button-outlined-gray-selected-border-hover: $ilc-border-primary-hover !default;
 $ilc-tabs-button-outlined-gray-selected-border-focus: $ilc-border-primary !default;
 $ilc-tabs-button-outlined-gray-selected-border-stroke: $ilc-stroke-sm !default;
+$ilc-table-header-cell-bg: $ilc-background-tertiary !default;
+$ilc-table-header-cell-text: $ilc-text-tertiary !default;
+$ilc-table-cell-bg: $ilc-background-primary !default;
+$ilc-table-cell-bg-hover: $ilc-background-primary-hover !default;
+$ilc-table-cell-text: $ilc-text-primary !default;
+$ilc-table-cell-supporting-text: $ilc-text-quaternary !default;
+$ilc-table-cell-border: $ilc-border-secondary !default;
+$ilc-table-cell-border-stroke: $ilc-stroke-sm !default;
+$ilc-checkbox-sm-width: $ilc-width-4 !default;
+$ilc-checkbox-sm-height: $ilc-width-4 !default;
+$ilc-checkbox-sm-radius: $ilc-radius-xs !default;
+$ilc-checkbox-md-radius: $ilc-radius-sm !default;
+$ilc-checkbox-md-width: $ilc-width-5 !default;
+$ilc-checkbox-md-height: $ilc-width-5 !default;
+$ilc-checkbox-unchecked-bg: $ilc-background-primary !default;
+$ilc-checkbox-unchecked-bg-disabled: $ilc-background-disabled-subtle !default;
+$ilc-checkbox-unchecked-border: $ilc-border-primary !default;
+$ilc-checkbox-unchecked-border-hover: $ilc-border-primary !default;
+$ilc-checkbox-unchecked-border-focus: $ilc-border-brand !default;
+$ilc-checkbox-unchecked-border-disabled: $ilc-border-disabled !default;
+$ilc-checkbox-unchecked-border-stroke: $ilc-stroke-sm !default;
+$ilc-checkbox-unchecked-border-stroke-hover: $ilc-stroke-md !default;
+$ilc-checkbox-unchecked-border-stroke-focus: $ilc-stroke-sm !default;
+$ilc-checkbox-unchecked-border-stroke-disabled: $ilc-stroke-sm !default;
+$ilc-checkbox-checked-bg: $ilc-background-brand-solid !default;
+$ilc-checkbox-checked-bg-hover: $ilc-background-brand-solid-hover !default;
+$ilc-checkbox-checked-bg-focus: $ilc-background-brand-solid !default;
+$ilc-checkbox-checked-bg-disabled: $ilc-background-disabled-subtle !default;
+$ilc-checkbox-checked-border-disabled: $ilc-border-disabled !default;
+$ilc-checkbox-checked-fg: $ilc-foreground-white !default;
+$ilc-checkbox-checked-fg-disabled: $ilc-foreground-disabled-subtle !default;
+$ilc-checkbox-checked-border-stroke-disabled: $ilc-stroke-sm !default;
 
 $tokens: (
   'colors': (
@@ -1785,6 +1817,54 @@ $tokens: (
           'border-stroke': $ilc-tabs-button-outlined-gray-selected-border-stroke
         )
       )
+    )
+  ),
+  'table': (
+    'header-cell': (
+      'bg': $ilc-table-header-cell-bg,
+      'text': $ilc-table-header-cell-text
+    ),
+    'cell': (
+      'bg': $ilc-table-cell-bg,
+      'bg-hover': $ilc-table-cell-bg-hover,
+      'text': $ilc-table-cell-text,
+      'supporting-text': $ilc-table-cell-supporting-text,
+      'border': $ilc-table-cell-border,
+      'border-stroke': $ilc-table-cell-border-stroke
+    )
+  ),
+  'checkbox': (
+    'sm': (
+      'width': $ilc-checkbox-sm-width,
+      'height': $ilc-checkbox-sm-height,
+      'radius': $ilc-checkbox-sm-radius
+    ),
+    'md': (
+      'radius': $ilc-checkbox-md-radius,
+      'width': $ilc-checkbox-md-width,
+      'height': $ilc-checkbox-md-height
+    ),
+    'unchecked': (
+      'bg': $ilc-checkbox-unchecked-bg,
+      'bg-disabled': $ilc-checkbox-unchecked-bg-disabled,
+      'border': $ilc-checkbox-unchecked-border,
+      'border-hover': $ilc-checkbox-unchecked-border-hover,
+      'border-focus': $ilc-checkbox-unchecked-border-focus,
+      'border-disabled': $ilc-checkbox-unchecked-border-disabled,
+      'border-stroke': $ilc-checkbox-unchecked-border-stroke,
+      'border-stroke-hover': $ilc-checkbox-unchecked-border-stroke-hover,
+      'border-stroke-focus': $ilc-checkbox-unchecked-border-stroke-focus,
+      'border-stroke-disabled': $ilc-checkbox-unchecked-border-stroke-disabled
+    ),
+    'checked': (
+      'bg': $ilc-checkbox-checked-bg,
+      'bg-hover': $ilc-checkbox-checked-bg-hover,
+      'bg-focus': $ilc-checkbox-checked-bg-focus,
+      'bg-disabled': $ilc-checkbox-checked-bg-disabled,
+      'border-disabled': $ilc-checkbox-checked-border-disabled,
+      'fg': $ilc-checkbox-checked-fg,
+      'fg-disabled': $ilc-checkbox-checked-fg-disabled,
+      'border-stroke-disabled': $ilc-checkbox-checked-border-stroke-disabled
     )
   ),
   'tokenSetOrder': (
