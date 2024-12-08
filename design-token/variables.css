@@ -791,7 +791,7 @@
   --ilc-table-cell-bg: var(--ilc-background-primary, #ffffff);
   --ilc-table-cell-bg-hover: var(--ilc-background-primary-hover, #fafafa);
   --ilc-table-cell-text: var(--ilc-text-primary, #333741);
-  --ilc-table-cell-supporting-text: var(--ilc-text-quaternary, #94969c);
+  --ilc-table-cell-supporting-text: var(--ilc-text-tertiary, #85888e);
   --ilc-table-cell-border: var(--ilc-border-secondary, #f0f1f1);
   --ilc-table-cell-border-stroke: var(--ilc-stroke-sm, 1px);
   --ilc-checkbox-sm-width: var(--ilc-width-4, 1rem);
