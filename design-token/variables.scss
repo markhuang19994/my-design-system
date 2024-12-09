@@ -701,6 +701,9 @@ $ilc-input-error-input-fg: $ilc-text-error !default;
 $ilc-input-error-input-border: $ilc-border-error !default;
 $ilc-input-error-input-border-hover: $ilc-border-error !default;
 $ilc-input-error-input-border-focused: $ilc-border-brand !default;
+$ilc-input-radius: $ilc-radius-sm !default;
+$ilc-input-border-width: $ilc-stroke-sm !default;
+$ilc-input-border-width-hover: $ilc-stroke-md !default;
 $ilc-dialog-bg: $ilc-background-primary !default;
 $ilc-dialog-title: $ilc-text-primary !default;
 $ilc-dialog-body: $ilc-text-primary !default;
@@ -1682,7 +1685,10 @@ $tokens: (
       'input-border': $ilc-input-error-input-border,
       'input-border-hover': $ilc-input-error-input-border-hover,
       'input-border-focused': $ilc-input-error-input-border-focused
-    )
+    ),
+    'radius': $ilc-input-radius,
+    'border-width': $ilc-input-border-width,
+    'border-width-hover': $ilc-input-border-width-hover
   ),
   'dialog': (
     'bg': $ilc-dialog-bg,

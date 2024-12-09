@@ -701,6 +701,9 @@
   --ilc-input-error-input-border: var(--ilc-border-error, #f04438);
   --ilc-input-error-input-border-hover: var(--ilc-border-error, #f04438);
   --ilc-input-error-input-border-focused: var(--ilc-border-brand, #0086c9);
+  --ilc-input-radius: var(--ilc-radius-sm, 0.375rem);
+  --ilc-input-border-width: var(--ilc-stroke-sm, 1px);
+  --ilc-input-border-width-hover: var(--ilc-stroke-md, 2px);
   --ilc-dialog-bg: var(--ilc-background-primary, #ffffff);
   --ilc-dialog-title: var(--ilc-text-primary, #333741);
   --ilc-dialog-body: var(--ilc-text-primary, #333741);
