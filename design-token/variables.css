@@ -725,7 +725,7 @@
   --ilc-section-item-active-text-hover: var(--ilc-text-brand-hover, #026aa2);
   --ilc-section-item-active-text-focused: var(--ilc-text-brand, #0086c9);
   --ilc-section-item-active-text-disabled: var(--ilc-text-disabled, #94969c);
-  --ilc-section-bg: var(--ilc-background-brand-solid-hover, #026aa2);
+  --ilc-section-bg: var(--ilc-background-brand-solid, #0086c9);
   --ilc-tabs-button-filled-buttons-gap: var(--ilc-gap-1, 0.25rem);
   --ilc-tabs-button-filled-radius-sm: var(--ilc-radius-sm, 0.375rem);
   --ilc-tabs-button-filled-radius-md: var(--ilc-radius-sm, 0.375rem);
