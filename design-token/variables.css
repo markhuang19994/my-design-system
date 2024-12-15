@@ -279,6 +279,7 @@
   --ilc-text-white: var(--ilc-colors-base-white, #ffffff);
   --ilc-text-black: var(--ilc-colors-base-black, #000000);
   --ilc-text-disabled: var(--ilc-colors-dark-5, #94969c);
+  --ilc-text-disabled-solid: var(--ilc-colors-dark-7, #61646c);
   --ilc-text-placeholder: var(--ilc-colors-dark-5, #94969c);
   --ilc-text-placeholder-subtle: var(--ilc-colors-dark-3, #ececed);
   --ilc-text-brand: var(--ilc-colors-brand-6, #0086c9);
@@ -693,7 +694,7 @@
   --ilc-input-default-input-border-disabled: var(--ilc-border-disabled, #ececed);
   --ilc-input-label-required: var(--ilc-text-warning, #dc6803);
   --ilc-input-placeholder-text: var(--ilc-text-disabled, #94969c);
-  --ilc-input-input-text-disbled: var(--ilc-text-disabled, #94969c);
+  --ilc-input-input-text-disbled: var(--ilc-text-disabled-solid, #61646c);
   --ilc-input-input-bg-disbled: var(--ilc-background-disabled, #f0f1f1);
   --ilc-input-error-description-text: var(--ilc-text-error-hover, #b42318);
   --ilc-input-error-input-text: var(--ilc-text-error, #d92d20);

@@ -279,6 +279,7 @@ $ilc-text-quaternary: $ilc-colors-dark-5 !default;
 $ilc-text-white: $ilc-colors-base-white !default;
 $ilc-text-black: $ilc-colors-base-black !default;
 $ilc-text-disabled: $ilc-colors-dark-5 !default;
+$ilc-text-disabled-solid: $ilc-colors-dark-7 !default;
 $ilc-text-placeholder: $ilc-colors-dark-5 !default;
 $ilc-text-placeholder-subtle: $ilc-colors-dark-3 !default;
 $ilc-text-brand: $ilc-colors-brand-6 !default;
@@ -693,7 +694,7 @@ $ilc-input-default-input-border-focused: $ilc-border-brand !default;
 $ilc-input-default-input-border-disabled: $ilc-border-disabled !default;
 $ilc-input-label-required: $ilc-text-warning !default;
 $ilc-input-placeholder-text: $ilc-text-disabled !default;
-$ilc-input-input-text-disbled: $ilc-text-disabled !default;
+$ilc-input-input-text-disbled: $ilc-text-disabled-solid !default;
 $ilc-input-input-bg-disbled: $ilc-background-disabled !default;
 $ilc-input-error-description-text: $ilc-text-error-hover !default;
 $ilc-input-error-input-text: $ilc-text-error !default;
@@ -1166,6 +1167,7 @@ $tokens: (
     'white': $ilc-text-white,
     'black': $ilc-text-black,
     'disabled': $ilc-text-disabled,
+    'disabled-solid': $ilc-text-disabled-solid,
     'placeholder': $ilc-text-placeholder,
     'placeholder-subtle': $ilc-text-placeholder-subtle,
     'brand': $ilc-text-brand,
