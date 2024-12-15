@@ -226,22 +226,6 @@ $ilc-text-case-uppercase: uppercase !default;
 $ilc-text-decoration-none: none !default;
 $ilc-paragraph-indent-0: 0px !default;
 $ilc-opacity-overlay: $ilc-opacity-gray-8-60 !default;
-$ilc-heading-heading-xl: $ilc-font-weights-bold $ilc-font-size-xl/$ilc-line-heights-xl $ilc-font-families-sans-serif !default;
-$ilc-heading-heading-lg: $ilc-font-weights-bold $ilc-font-size-lg/$ilc-line-heights-lg $ilc-font-families-sans-serif !default;
-$ilc-heading-heading-md: $ilc-font-weights-bold $ilc-font-size-md/$ilc-line-heights-md $ilc-font-families-sans-serif !default;
-$ilc-heading-heading-sm: $ilc-font-weights-bold $ilc-font-size-sm/$ilc-line-heights-sm $ilc-font-families-sans-serif !default;
-$ilc-heading-heading-xs: $ilc-font-weights-bold $ilc-font-size-xs/$ilc-line-heights-xs $ilc-font-families-sans-serif !default;
-$ilc-body-lg-medium: $ilc-font-weights-medium $ilc-font-size-lg/$ilc-line-heights-lg $ilc-font-families-sans-serif !default;
-$ilc-body-lg-regular: $ilc-font-weights-regular $ilc-font-size-lg/$ilc-line-heights-lg $ilc-font-families-sans-serif !default;
-$ilc-body-md-medium: $ilc-font-weights-medium $ilc-font-size-md/$ilc-line-heights-md $ilc-font-families-sans-serif !default;
-$ilc-body-md-regular: $ilc-font-weights-regular $ilc-font-size-md/$ilc-line-heights-md $ilc-font-families-sans-serif !default;
-$ilc-body-sm-regular: $ilc-font-weights-regular $ilc-font-size-sm/$ilc-line-heights-sm $ilc-font-families-sans-serif !default;
-$ilc-body-sm-medium: $ilc-font-weights-medium $ilc-font-size-sm/$ilc-line-heights-sm $ilc-font-families-sans-serif !default;
-$ilc-body-xs-medium: $ilc-font-weights-medium $ilc-font-size-xs/$ilc-line-heights-xs $ilc-font-families-sans-serif !default;
-$ilc-body-xs-regular: $ilc-font-weights-regular $ilc-font-size-xs/$ilc-line-heights-xs $ilc-font-families-sans-serif !default;
-$ilc-caption-sm: $ilc-font-weights-regular $ilc-font-size-sm/$ilc-line-heights-sm $ilc-font-families-sans-serif !default;
-$ilc-caption-sm-uppercase: $ilc-font-weights-regular $ilc-font-size-sm/$ilc-line-heights-sm $ilc-font-families-sans-serif !default;
-$ilc-caption-xs: $ilc-font-weights-regular $ilc-font-size-xs/$ilc-line-heights-xs $ilc-font-families-sans-serif !default;
 $ilc-background-primary: $ilc-colors-base-white !default;
 $ilc-background-primary-hover: $ilc-colors-dark-0 !default;
 $ilc-background-secondary: $ilc-colors-dark-1 !default;
@@ -439,6 +423,22 @@ $ilc-utility-cyan-600: $ilc-colors-cyan-6 !default;
 $ilc-utility-cyan-700: $ilc-colors-cyan-7 !default;
 $ilc-utility-cyan-800: $ilc-colors-cyan-8 !default;
 $ilc-utility-cyan-900: $ilc-colors-cyan-9 !default;
+$ilc-heading-heading-xl: $ilc-font-weights-bold $ilc-font-size-xl/$ilc-line-heights-xl $ilc-font-families-sans-serif !default;
+$ilc-heading-heading-lg: $ilc-font-weights-bold $ilc-font-size-lg/$ilc-line-heights-lg $ilc-font-families-sans-serif !default;
+$ilc-heading-heading-md: $ilc-font-weights-bold $ilc-font-size-md/$ilc-line-heights-md $ilc-font-families-sans-serif !default;
+$ilc-heading-heading-sm: $ilc-font-weights-bold $ilc-font-size-sm/$ilc-line-heights-sm $ilc-font-families-sans-serif !default;
+$ilc-heading-heading-xs: $ilc-font-weights-bold $ilc-font-size-xs/$ilc-line-heights-xs $ilc-font-families-sans-serif !default;
+$ilc-body-lg-medium: $ilc-font-weights-medium $ilc-font-size-lg/$ilc-line-heights-lg $ilc-font-families-sans-serif !default;
+$ilc-body-lg-regular: $ilc-font-weights-regular $ilc-font-size-lg/$ilc-line-heights-lg $ilc-font-families-sans-serif !default;
+$ilc-body-md-medium: $ilc-font-weights-medium $ilc-font-size-md/$ilc-line-heights-md $ilc-font-families-sans-serif !default;
+$ilc-body-md-regular: $ilc-font-weights-regular $ilc-font-size-md/$ilc-line-heights-md $ilc-font-families-sans-serif !default;
+$ilc-body-sm-regular: $ilc-font-weights-regular $ilc-font-size-sm/$ilc-line-heights-sm $ilc-font-families-sans-serif !default;
+$ilc-body-sm-medium: $ilc-font-weights-medium $ilc-font-size-sm/$ilc-line-heights-sm $ilc-font-families-sans-serif !default;
+$ilc-body-xs-medium: $ilc-font-weights-medium $ilc-font-size-xs/$ilc-line-heights-xs $ilc-font-families-sans-serif !default;
+$ilc-body-xs-regular: $ilc-font-weights-regular $ilc-font-size-xs/$ilc-line-heights-xs $ilc-font-families-sans-serif !default;
+$ilc-caption-sm: $ilc-font-weights-regular $ilc-font-size-sm/$ilc-line-heights-sm $ilc-font-families-sans-serif !default;
+$ilc-caption-sm-uppercase: $ilc-font-weights-regular $ilc-font-size-sm/$ilc-line-heights-sm $ilc-font-families-sans-serif !default;
+$ilc-caption-xs: $ilc-font-weights-regular $ilc-font-size-xs/$ilc-line-heights-xs $ilc-font-families-sans-serif !default;
 $ilc-padding-1: $ilc-spacing-4 !default;
 $ilc-padding-2: $ilc-spacing-8 !default;
 $ilc-padding-3: $ilc-spacing-12 !default;
@@ -1099,28 +1099,6 @@ $tokens: (
   'paragraphSpacing': (
     '0': $ilc-paragraph-spacing-0
   ),
-  'Heading': (
-    'heading-xl': $ilc-heading-heading-xl,
-    'heading-lg': $ilc-heading-heading-lg,
-    'heading-md': $ilc-heading-heading-md,
-    'heading-sm': $ilc-heading-heading-sm,
-    'heading-xs': $ilc-heading-heading-xs
-  ),
-  'Body': (
-    'lg-medium': $ilc-body-lg-medium,
-    'lg-regular': $ilc-body-lg-regular,
-    'md-medium': $ilc-body-md-medium,
-    'md-regular': $ilc-body-md-regular,
-    'sm-regular': $ilc-body-sm-regular,
-    'sm-medium': $ilc-body-sm-medium,
-    'xs-medium': $ilc-body-xs-medium,
-    'xs-regular': $ilc-body-xs-regular
-  ),
-  'Caption': (
-    'sm': $ilc-caption-sm,
-    'sm-uppercase': $ilc-caption-sm-uppercase,
-    'xs': $ilc-caption-xs
-  ),
   'textCase': (
     'none': $ilc-text-case-none,
     'uppercase': $ilc-text-case-uppercase
@@ -1359,6 +1337,28 @@ $tokens: (
       '800': $ilc-utility-cyan-800,
       '900': $ilc-utility-cyan-900
     )
+  ),
+  'heading': (
+    'heading-xl': $ilc-heading-heading-xl,
+    'heading-lg': $ilc-heading-heading-lg,
+    'heading-md': $ilc-heading-heading-md,
+    'heading-sm': $ilc-heading-heading-sm,
+    'heading-xs': $ilc-heading-heading-xs
+  ),
+  'body': (
+    'lg-medium': $ilc-body-lg-medium,
+    'lg-regular': $ilc-body-lg-regular,
+    'md-medium': $ilc-body-md-medium,
+    'md-regular': $ilc-body-md-regular,
+    'sm-regular': $ilc-body-sm-regular,
+    'sm-medium': $ilc-body-sm-medium,
+    'xs-medium': $ilc-body-xs-medium,
+    'xs-regular': $ilc-body-xs-regular
+  ),
+  'caption': (
+    'sm': $ilc-caption-sm,
+    'sm-uppercase': $ilc-caption-sm-uppercase,
+    'xs': $ilc-caption-xs
   ),
   'padding': (
     '1': $ilc-padding-1,
@@ -1886,7 +1886,8 @@ $tokens: (
     '1': 'foundation/spacing',
     '2': 'foundation/typography',
     '3': 'semantic/color',
-    '4': 'semantic/size',
-    '5': 'components'
+    '4': 'semantic/typography',
+    '5': 'semantic/size',
+    '6': 'components'
   )
 );
