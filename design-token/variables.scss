@@ -547,6 +547,7 @@ $ilc-height-2px: $ilc-spacing-2 !default;
 $ilc-height-1s: $ilc-spacing-6 !default;
 $ilc-height-2s: $ilc-spacing-10 !default;
 $ilc-height-3s: $ilc-spacing-14 !default;
+$ilc-stroke-none: $ilc-spacing-0 !default;
 $ilc-stroke-sm: $ilc-spacing-1 !default;
 $ilc-stroke-md: $ilc-spacing-2 !default;
 $ilc-width-1: $ilc-spacing-4 !default;
@@ -601,6 +602,7 @@ $ilc-button-primary-error-fg: $ilc-text-white !default;
 $ilc-button-primary-error-fg-hover: $ilc-text-white !default;
 $ilc-button-primary-error-fg-focus: $ilc-text-white !default;
 $ilc-button-primary-error-fg-disabled: $ilc-text-disabled !default;
+$ilc-button-primary-border-width: $ilc-stroke-none !default;
 $ilc-button-secondary-gray-bg: $ilc-background-tertiary !default;
 $ilc-button-secondary-gray-bg-hover: $ilc-background-tertiary-hover !default;
 $ilc-button-secondary-gray-bg-focus: $ilc-background-tertiary-hover !default;
@@ -617,6 +619,7 @@ $ilc-button-secondary-error-fg: $ilc-text-error !default;
 $ilc-button-secondary-error-fg-hover: $ilc-text-error-hover !default;
 $ilc-button-secondary-error-fg-focus: $ilc-text-error !default;
 $ilc-button-secondary-error-fg-disabled: $ilc-text-disabled !default;
+$ilc-button-secondary-border-width: $ilc-stroke-none !default;
 $ilc-button-outlined-brand-bg-hover: $ilc-background-brand-primary !default;
 $ilc-button-outlined-brand-bg-focus: $ilc-background-brand-primary !default;
 $ilc-button-outlined-brand-bg-disabled: $ilc-background-disabled !default;
@@ -647,8 +650,8 @@ $ilc-button-outlined-error-fg-disabled: $ilc-text-disabled !default;
 $ilc-button-outlined-error-border: $ilc-border-error-accent !default;
 $ilc-button-outlined-error-border-hover: $ilc-border-error-accent !default;
 $ilc-button-outlined-error-border-focus: $ilc-border-error-accent !default;
-$ilc-button-outlined-border-width-sm: $ilc-stroke-sm !default;
-$ilc-button-outlined-border-width-md: $ilc-stroke-sm !default;
+$ilc-button-outlined-border-width: $ilc-stroke-sm !default;
+$ilc-button-outlined-border-width-disabled: $ilc-stroke-none !default;
 $ilc-button-text-brand-bg-hover: $ilc-background-brand-primary !default;
 $ilc-button-text-brand-bg-focus: $ilc-background-brand-primary !default;
 $ilc-button-text-brand-bg-disabled: $ilc-background-disabled !default;
@@ -668,6 +671,7 @@ $ilc-button-text-error-bg-disabled: $ilc-background-disabled !default;
 $ilc-button-text-error-fg: $ilc-text-error !default;
 $ilc-button-text-error-fg-hover: $ilc-text-error-hover !default;
 $ilc-button-text-error-fg-disabled: $ilc-text-disabled !default;
+$ilc-button-text-border-width: $ilc-stroke-none !default;
 $ilc-button-radius-xs: $ilc-radius-xs !default;
 $ilc-button-radius-sm: $ilc-radius-sm !default;
 $ilc-button-radius-md: $ilc-radius-sm !default;
@@ -1475,6 +1479,7 @@ $tokens: (
     '3s': $ilc-height-3s
   ),
   'stroke': (
+    'none': $ilc-stroke-none,
     'sm': $ilc-stroke-sm,
     'md': $ilc-stroke-md
   ),
@@ -1537,7 +1542,8 @@ $tokens: (
         'fg-hover': $ilc-button-primary-error-fg-hover,
         'fg-focus': $ilc-button-primary-error-fg-focus,
         'fg-disabled': $ilc-button-primary-error-fg-disabled
-      )
+      ),
+      'border-width': $ilc-button-primary-border-width
     ),
     'secondary': (
       'gray': (
@@ -1559,7 +1565,8 @@ $tokens: (
         'fg-hover': $ilc-button-secondary-error-fg-hover,
         'fg-focus': $ilc-button-secondary-error-fg-focus,
         'fg-disabled': $ilc-button-secondary-error-fg-disabled
-      )
+      ),
+      'border-width': $ilc-button-secondary-border-width
     ),
     'outlined': (
       'brand': (
@@ -1598,10 +1605,8 @@ $tokens: (
         'border-hover': $ilc-button-outlined-error-border-hover,
         'border-focus': $ilc-button-outlined-error-border-focus
       ),
-      'border-width': (
-        'sm': $ilc-button-outlined-border-width-sm,
-        'md': $ilc-button-outlined-border-width-md
-      )
+      'border-width': $ilc-button-outlined-border-width,
+      'border-width-disabled': $ilc-button-outlined-border-width-disabled
     ),
     'text': (
       'brand': (
@@ -1628,7 +1633,8 @@ $tokens: (
         'fg': $ilc-button-text-error-fg,
         'fg-hover': $ilc-button-text-error-fg-hover,
         'fg-disabled': $ilc-button-text-error-fg-disabled
-      )
+      ),
+      'border-width': $ilc-button-text-border-width
     ),
     'radius': (
       'xs': $ilc-button-radius-xs,
