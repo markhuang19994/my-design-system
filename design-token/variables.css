@@ -306,6 +306,7 @@
   --ilc-foreground-white: var(--ilc-colors-base-white, #ffffff);
   --ilc-foreground-black: var(--ilc-colors-base-black, #000000);
   --ilc-foreground-disabled: var(--ilc-colors-dark-5, #94969c);
+  --ilc-foreground-disabled-solid: var(--ilc-colors-dark-4, #cecfd2);
   --ilc-foreground-disabled-subtle: var(--ilc-colors-dark-3, #ececed);
   --ilc-foreground-brand: var(--ilc-colors-brand-6, #0086c9);
   --ilc-foreground-brand-hover: var(--ilc-colors-brand-7, #026aa2);
@@ -824,6 +825,6 @@
   --ilc-checkbox-checked-bg-disabled: var(--ilc-background-disabled-subtle, #f5f5f6);
   --ilc-checkbox-checked-border-disabled: var(--ilc-border-disabled, #ececed);
   --ilc-checkbox-checked-fg: var(--ilc-foreground-white, #ffffff);
-  --ilc-checkbox-checked-fg-disabled: var(--ilc-foreground-disabled-subtle, #ececed);
+  --ilc-checkbox-checked-fg-disabled: var(--ilc-foreground-disabled-solid, #cecfd2);
   --ilc-checkbox-checked-border-stroke-disabled: var(--ilc-stroke-sm, 1px);
 }

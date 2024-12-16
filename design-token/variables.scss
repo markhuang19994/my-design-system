@@ -306,6 +306,7 @@ $ilc-foreground-quaternary-hover: $ilc-colors-dark-6 !default;
 $ilc-foreground-white: $ilc-colors-base-white !default;
 $ilc-foreground-black: $ilc-colors-base-black !default;
 $ilc-foreground-disabled: $ilc-colors-dark-5 !default;
+$ilc-foreground-disabled-solid: $ilc-colors-dark-4 !default;
 $ilc-foreground-disabled-subtle: $ilc-colors-dark-3 !default;
 $ilc-foreground-brand: $ilc-colors-brand-6 !default;
 $ilc-foreground-brand-hover: $ilc-colors-brand-7 !default;
@@ -824,7 +825,7 @@ $ilc-checkbox-checked-bg-focus: $ilc-background-brand-solid !default;
 $ilc-checkbox-checked-bg-disabled: $ilc-background-disabled-subtle !default;
 $ilc-checkbox-checked-border-disabled: $ilc-border-disabled !default;
 $ilc-checkbox-checked-fg: $ilc-foreground-white !default;
-$ilc-checkbox-checked-fg-disabled: $ilc-foreground-disabled-subtle !default;
+$ilc-checkbox-checked-fg-disabled: $ilc-foreground-disabled-solid !default;
 $ilc-checkbox-checked-border-stroke-disabled: $ilc-stroke-sm !default;
 
 $tokens: (
@@ -1196,6 +1197,7 @@ $tokens: (
     'white': $ilc-foreground-white,
     'black': $ilc-foreground-black,
     'disabled': $ilc-foreground-disabled,
+    'disabled-solid': $ilc-foreground-disabled-solid,
     'disabled-subtle': $ilc-foreground-disabled-subtle,
     'brand': $ilc-foreground-brand,
     'brand-hover': $ilc-foreground-brand-hover,

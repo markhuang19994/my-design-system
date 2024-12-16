@@ -1,6 +1,6 @@
 {
   "name": "@markhuang19994/igx-design-token",
-  "version": "1.18.0",
+  "version": "1.18.1",
   "description": "design token lib",
   "main": "variables.css",
   "style": "variables.css",
