@@ -424,11 +424,11 @@ $ilc-utility-cyan-600: $ilc-colors-cyan-6 !default;
 $ilc-utility-cyan-700: $ilc-colors-cyan-7 !default;
 $ilc-utility-cyan-800: $ilc-colors-cyan-8 !default;
 $ilc-utility-cyan-900: $ilc-colors-cyan-9 !default;
-$ilc-heading-heading-xl: $ilc-font-weights-bold $ilc-font-size-xl/$ilc-line-heights-xl $ilc-font-families-sans-serif !default;
-$ilc-heading-heading-lg: $ilc-font-weights-bold $ilc-font-size-lg/$ilc-line-heights-lg $ilc-font-families-sans-serif !default;
-$ilc-heading-heading-md: $ilc-font-weights-bold $ilc-font-size-md/$ilc-line-heights-md $ilc-font-families-sans-serif !default;
-$ilc-heading-heading-sm: $ilc-font-weights-bold $ilc-font-size-sm/$ilc-line-heights-sm $ilc-font-families-sans-serif !default;
-$ilc-heading-heading-xs: $ilc-font-weights-bold $ilc-font-size-xs/$ilc-line-heights-xs $ilc-font-families-sans-serif !default;
+$ilc-heading-xl: $ilc-font-weights-bold $ilc-font-size-xl/$ilc-line-heights-xl $ilc-font-families-sans-serif !default;
+$ilc-heading-lg: $ilc-font-weights-bold $ilc-font-size-lg/$ilc-line-heights-lg $ilc-font-families-sans-serif !default;
+$ilc-heading-md: $ilc-font-weights-bold $ilc-font-size-md/$ilc-line-heights-md $ilc-font-families-sans-serif !default;
+$ilc-heading-sm: $ilc-font-weights-bold $ilc-font-size-sm/$ilc-line-heights-sm $ilc-font-families-sans-serif !default;
+$ilc-heading-xs: $ilc-font-weights-bold $ilc-font-size-xs/$ilc-line-heights-xs $ilc-font-families-sans-serif !default;
 $ilc-body-lg-medium: $ilc-font-weights-medium $ilc-font-size-lg/$ilc-line-heights-lg $ilc-font-families-sans-serif !default;
 $ilc-body-lg-regular: $ilc-font-weights-regular $ilc-font-size-lg/$ilc-line-heights-lg $ilc-font-families-sans-serif !default;
 $ilc-body-md-medium: $ilc-font-weights-medium $ilc-font-size-md/$ilc-line-heights-md $ilc-font-families-sans-serif !default;
@@ -1341,11 +1341,11 @@ $tokens: (
     )
   ),
   'heading': (
-    'heading-xl': $ilc-heading-heading-xl,
-    'heading-lg': $ilc-heading-heading-lg,
-    'heading-md': $ilc-heading-heading-md,
-    'heading-sm': $ilc-heading-heading-sm,
-    'heading-xs': $ilc-heading-heading-xs
+    'xl': $ilc-heading-xl,
+    'lg': $ilc-heading-lg,
+    'md': $ilc-heading-md,
+    'sm': $ilc-heading-sm,
+    'xs': $ilc-heading-xs
   ),
   'body': (
     'lg-medium': $ilc-body-lg-medium,

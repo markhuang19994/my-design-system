@@ -424,11 +424,11 @@
   --ilc-utility-cyan-700: var(--ilc-colors-cyan-7, #175cd3);
   --ilc-utility-cyan-800: var(--ilc-colors-cyan-8, #1849a9);
   --ilc-utility-cyan-900: var(--ilc-colors-cyan-9, #194185);
-  --ilc-heading-heading-xl: var(--ilc-font-weights-bold, 7var(--ilc-paragraph-spacing-0, 0)0) var(--ilc-font-size-xl, 2var(--ilc-paragraph-indent-0, 0px))/var(--ilc-line-heights-xl, 32) var(--ilc-font-families-sans-serif, 'Noto Sans TC');
-  --ilc-heading-heading-lg: var(--ilc-font-weights-bold, 7var(--ilc-paragraph-spacing-0, 0)0) var(--ilc-font-size-lg, 18px)/var(--ilc-line-heights-lg, 28) var(--ilc-font-families-sans-serif, 'Noto Sans TC');
-  --ilc-heading-heading-md: var(--ilc-font-weights-bold, 7var(--ilc-paragraph-spacing-0, 0)0) var(--ilc-font-size-md, 16px)/var(--ilc-line-heights-md, 24) var(--ilc-font-families-sans-serif, 'Noto Sans TC');
-  --ilc-heading-heading-sm: var(--ilc-font-weights-bold, 7var(--ilc-paragraph-spacing-0, 0)0) var(--ilc-font-size-sm, 14px)/var(--ilc-line-heights-sm, 22) var(--ilc-font-families-sans-serif, 'Noto Sans TC');
-  --ilc-heading-heading-xs: var(--ilc-font-weights-bold, 7var(--ilc-paragraph-spacing-0, 0)0) var(--ilc-font-size-xs, 12px)/var(--ilc-line-heights-xs, 18) var(--ilc-font-families-sans-serif, 'Noto Sans TC');
+  --ilc-heading-xl: var(--ilc-font-weights-bold, 7var(--ilc-paragraph-spacing-0, 0)0) var(--ilc-font-size-xl, 2var(--ilc-paragraph-indent-0, 0px))/var(--ilc-line-heights-xl, 32) var(--ilc-font-families-sans-serif, 'Noto Sans TC');
+  --ilc-heading-lg: var(--ilc-font-weights-bold, 7var(--ilc-paragraph-spacing-0, 0)0) var(--ilc-font-size-lg, 18px)/var(--ilc-line-heights-lg, 28) var(--ilc-font-families-sans-serif, 'Noto Sans TC');
+  --ilc-heading-md: var(--ilc-font-weights-bold, 7var(--ilc-paragraph-spacing-0, 0)0) var(--ilc-font-size-md, 16px)/var(--ilc-line-heights-md, 24) var(--ilc-font-families-sans-serif, 'Noto Sans TC');
+  --ilc-heading-sm: var(--ilc-font-weights-bold, 7var(--ilc-paragraph-spacing-0, 0)0) var(--ilc-font-size-sm, 14px)/var(--ilc-line-heights-sm, 22) var(--ilc-font-families-sans-serif, 'Noto Sans TC');
+  --ilc-heading-xs: var(--ilc-font-weights-bold, 7var(--ilc-paragraph-spacing-0, 0)0) var(--ilc-font-size-xs, 12px)/var(--ilc-line-heights-xs, 18) var(--ilc-font-families-sans-serif, 'Noto Sans TC');
   --ilc-body-lg-medium: var(--ilc-font-weights-medium, 5var(--ilc-paragraph-spacing-0, 0)0) var(--ilc-font-size-lg, 18px)/var(--ilc-line-heights-lg, 28) var(--ilc-font-families-sans-serif, 'Noto Sans TC');
   --ilc-body-lg-regular: var(--ilc-font-weights-regular, 4var(--ilc-paragraph-spacing-0, 0)0) var(--ilc-font-size-lg, 18px)/var(--ilc-line-heights-lg, 28) var(--ilc-font-families-sans-serif, 'Noto Sans TC');
   --ilc-body-md-medium: var(--ilc-font-weights-medium, 5var(--ilc-paragraph-spacing-0, 0)0) var(--ilc-font-size-md, 16px)/var(--ilc-line-heights-md, 24) var(--ilc-font-families-sans-serif, 'Noto Sans TC');
